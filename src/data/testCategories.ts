@@ -329,7 +329,7 @@ export const testCategories: TestCategory[] = [
     icon: '📚',
     totalQuestions: 50,
     difficulty: 'Easy',
-    isPremium: true,
+    isPremium: false,
     estimatedTime: 60
   },
   {

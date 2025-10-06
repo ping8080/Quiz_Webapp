@@ -13,11 +13,7 @@ export const testQuestionsByCategory: Record<string, TestQuestion[]> = {
         "The vas deferens"
       ],
       correctAnswer: 1,
-      explanation: " · Interstitial (Leydig) cells are located between the seminiferous tubules in the testes. They secrete testosterone, 
-the most important of the androgen hormones in males, when stimulated by the LH from the pituitary gland. 
-        · The seminiferous tubules are tightly coiled ducts where sperm cells are produced. 
-· The epididymis is the site of sperm maturation and the vas deferens is the duct which carries sperm from the 
-epididymis to the ejaculatory duct.",
+      explanation: "Interstitial (Leydig) cells are located between the seminiferous tubules in the testes. They secrete testosterone, the most important of the androgen hormones in males, when stimulated by the LH from the pituitary gland.",
       category: "Nursing Fundamentals",
       difficulty: 'Easy'
     },

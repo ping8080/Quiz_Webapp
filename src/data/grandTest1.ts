@@ -1,4 +1,4 @@
-import { TestQuestion } from "../types/test";
+import { grandTest1 } from "./grandTest1";
 
 export const grandTest1: TestQuestion[] = [
   {

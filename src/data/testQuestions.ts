@@ -5,15 +5,19 @@ export const testQuestionsByCategory: Record<string, TestQuestion[]> = {
   'nursing-fundamentals': [
     {
       id: 1,
-      question: "What is the primary goal of nursing care?",
+      question: "In males, testosterone is produced by?",
       options: [
-        "To cure diseases",
-        "To promote health and prevent illness",
-        "To assist doctors",
-        "To manage hospital operations"
+        "The interstitial cells",
+        "The seminiferous tubules",
+        "The epididymis",
+        "The vas deferens"
       ],
       correctAnswer: 1,
-      explanation: "The primary goal of nursing is to promote health, prevent illness, and help patients achieve optimal health outcomes.",
+      explanation: " · Interstitial (Leydig) cells are located between the seminiferous tubules in the testes. They secrete testosterone, 
+the most important of the androgen hormones in males, when stimulated by the LH from the pituitary gland. 
+        · The seminiferous tubules are tightly coiled ducts where sperm cells are produced. 
+· The epididymis is the site of sperm maturation and the vas deferens is the duct which carries sperm from the 
+epididymis to the ejaculatory duct.",
       category: "Nursing Fundamentals",
       difficulty: 'Easy'
     },

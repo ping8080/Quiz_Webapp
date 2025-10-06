@@ -28,7 +28,7 @@ const mcqSubcategories = Array.from({ length: 94 }, (_, i) => ({
   totalQuestions: 25,
   estimatedTime: 30,
   difficulty: 'Medium' as const,
-  isPremium: i >= 0 // First 0 are free, rest are premium
+  isPremium: i >= 94 // All premium
 }));
 
 const nstSubcategories = Array.from({ length: 6 }, (_, i) => ({

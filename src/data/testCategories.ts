@@ -61,9 +61,9 @@ const nntSubcategories = Array.from({ length: 10 }, (_, i) => ({
   isPremium: true
 }));
 
-const nursingEducathSubcategories = Array.from({ length: 21 }, (_, i) => ({
-  id: `nursing-educath-${i + 1}`,
-  name: `Nursing Educath ${i + 1}`,
+const nursingEducationSubcategories = Array.from({ length: 21 }, (_, i) => ({
+  id: `nursing-education-${i + 1}`,
+  name: `Nursing Education ${i + 1}`,
   description: `Educational nursing test focusing on theoretical concepts - Test ${i + 1}`,
   totalQuestions: 35,
   estimatedTime: 40,
@@ -341,5 +341,14 @@ export const testCategories: TestCategory[] = [
     difficulty: 'Medium',
     isPremium: true,
     estimatedTime: 45
+  }
+];
+// ✅ New combined category
+export const testCategories: TestCategory[] = [
+  {
+    id: 'nnl-one',
+    name: 'NNL One',
+    description: 'All nursing tests under one unified category',
+    subcategories: [...grandTestSubcategories, ...hytSubcategories, ...mcqSubcategories, ...nstSubcategories, ...nsatSubcategories, ...nntSubcategories, ...nursingEducationSubcategories, ...specialTestSubcategories, ...satSubcategories, ...super15Subcategories, ...super30Subcategories, ...super50Subcategories]
   }
 ];

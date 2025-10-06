@@ -146,7 +146,7 @@ export const testCategories: TestCategory[] = [
     id: 'mcq',
     name: 'MCQ',
     description: 'Multiple Choice Questions covering various nursing topics and specialties',
-    icon: '❓',
+    icon: '🧠',
     subcategories: mcqSubcategories,
     totalQuestions: mcqSubcategories.reduce((sum, sub) => sum + sub.totalQuestions, 0),
     totalTime: mcqSubcategories.reduce((sum, sub) => sum + sub.estimatedTime, 0),

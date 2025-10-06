@@ -61,9 +61,9 @@ const nntSubcategories = Array.from({ length: 10 }, (_, i) => ({
   isPremium: true
 }));
 
-const nursingEducationSubcategories = Array.from({ length: 21 }, (_, i) => ({
-  id: `nursing-education-${i + 1}`,
-  name: `Nursing Education ${i + 1}`,
+const nursingEducathSubcategories = Array.from({ length: 21 }, (_, i) => ({
+  id: `nursing-educath-${i + 1}`,
+  name: `Nursing Educath ${i + 1}`,
   description: `Educational nursing test focusing on theoretical concepts - Test ${i + 1}`,
   totalQuestions: 35,
   estimatedTime: 40,

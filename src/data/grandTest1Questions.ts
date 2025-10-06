@@ -1,10 +1,10 @@
 // Test Questions with Explanations/Rationales/Solutions
 // Note: 'explanation' field contains rationale/solution/reasoning for the correct answer
-export const garndtestByCategory: Record<string, TestQuestion[31]> = {
-  'grand-test-1': [
+export const testQuestionsByCategory: Record<string, TestQuestion[]> = {
+  "mcq-1": [
     {
       "id": 1,
-      "question": "The emergency nurse is admitting a patient experiencing a GI bleed who is believed to be in the compensatory stage of shock. What assessment finding would be most consistent with the early stage of compensation?",
+      "question": "Which of the following statement is correct regarding arteries?",
       "options": [
         "Option A",
         "Option B",
@@ -12,13 +12,13 @@ export const garndtestByCategory: Record<string, TestQuestion[31]> = {
         "Option D"
       ],
       "correctAnswer": 0,
-      "explanation": "In the compensatory stage of shock, the body shunts blood from the organs, such as the skin and kidneys, to the brain and heart to ensure adequate blood supply. As a result, the patient’s skin is cool",
-      "category": "Mini-Test-1-Emergency-Nursing",
+      "explanation": "Arteries are a tube-like structure which transports fluid (blood and lymph) to and from every organ in the body. Arteries are composed of smooth muscle allowing constriction and dilation through the p",
+      "category": "Grand-Test-1-Prelims",
       "difficulty": "Medium"
     },
     {
       "id": 2,
-      "question": "A patient with a longstanding diagnosis of generalized anxiety disorder presents to the emergency room. The triage nurse notes upon assessment that the patient is hyperventilating. The triage nurse is aware that hyperventilation is the most common cause of which acid base imbalance?",
+      "question": "Where should the physician place the stethoscope to listen to the sound of the mitral valve?",
       "options": [
         "Option A",
         "Option B",
@@ -26,13 +26,13 @@ export const garndtestByCategory: Record<string, TestQuestion[31]> = {
         "Option D"
       ],
       "correctAnswer": 0,
-      "explanation": "The most common cause of acute respiratory alkalosis is hyperventilation. Extreme anxiety can lead to hyperventilation. Acute respiratory acidosis occurs in emergency situations, such as pulmonary ede",
-      "category": "Mini-Test-1-Emergency-Nursing",
+      "explanation": "The mitral valve [left atrioventricular (AV) valve] produces the apical beat (thrust) of the heart, which is most audible over the left fifth intercostal space at the midclavicular line. The pulmonary",
+      "category": "Grand-Test-1-Prelims",
       "difficulty": "Medium"
     },
     {
       "id": 3,
-      "question": "You have received a road traffic accident patient in emergency unit and assessing for tracheal displacement. The nurse should know that the trachea will deviate towards the….?",
+      "question": "Which of the following bacteria is an atypical organism, responsible for causing pneumonia?",
       "options": [
         "Option A",
         "Option B",
@@ -40,13 +40,13 @@ export const garndtestByCategory: Record<string, TestQuestion[31]> = {
         "Option D"
       ],
       "correctAnswer": 0,
-      "explanation": "Tracheal deviation is a clinical sign that results from unequal intrathoracic pressure within the chest cavity. The trachea will shift according to the pressure gradients within the thoracic cav",
-      "category": "Mini-Test-1-Emergency-Nursing",
+      "explanation": "Pneumonia is the inflammation of lung parenchyma. It may be further classified as viral, or bacterial based on the suspected pathogen. Bacteria are classified into 2 categories based on etiology",
+      "category": "Grand-Test-1-Prelims",
       "difficulty": "Medium"
     },
     {
       "id": 4,
-      "question": "A 62-year-old male client was in a motor vehicle accident as an unrestrained driver. He’s now in the emergency department complaining of difficulty of breathing and chest pain. On auscultation of his lung field, no breath sounds are present in the upper lobe. This client may have which of the following conditions?",
+      "question": "The nurse receives an infant in the OPD with complaints of vomiting and poor feeding. On examination, musty odor is present in baby’s sweat and urine. The paediatrician ordered for Guthrie test which is found to be positive. The nurse should suspect which of the following?",
       "options": [
         "Option A",
         "Option B",
@@ -54,13 +54,13 @@ export const garndtestByCategory: Record<string, TestQuestion[31]> = {
         "Option D"
       ],
       "correctAnswer": 0,
-      "explanation": "Pneumothorax is defined as the presence of air or gas in the pleural cavity, which can impair oxygenation and/or ventilation.Rhonchi is heard with bronchitis.From the trauma the client experienced, it",
-      "category": "Mini-Test-1-Emergency-Nursing",
+      "explanation": "The physical and lab findings are suggestive of Phenylketonuria, an inborn error of metabolism. It is caused by missense mutations in the gene encoding Phenylalanine hydroxylase (PAH), which catalyzes",
+      "category": "Grand-Test-1-Prelims",
       "difficulty": "Medium"
     },
     {
       "id": 5,
-      "question": "Which of the following organ is most commonly injured in blunt injury abdomen?",
+      "question": "Which type of collagen is found in wound healing?",
       "options": [
         "Option A",
         "Option B",
@@ -68,13 +68,13 @@ export const garndtestByCategory: Record<string, TestQuestion[31]> = {
         "Option D"
       ],
       "correctAnswer": 0,
-      "explanation": "Most common injured organ in penetrating trauma: Liver > Small intestineMost common organ injured in blunt trauma: SpleenMost common injury in seat belt injury: Mesentery",
-      "category": "Mini-Test-1-Emergency-Nursing",
+      "explanation": "Type-III collagen is involved in wound healing.The tensile strength of the wound is directly proportional to the amount of collagen present, and type I and III predominate in the skin and aponeurosis",
+      "category": "Grand-Test-1-Prelims",
       "difficulty": "Medium"
     },
     {
       "id": 6,
-      "question": "Which of the following is not a part of revised trauma score (RTS)?",
+      "question": "Which of the following drug is used to keep the ductus arteriosus patent after birth in case of congenital malformations?",
       "options": [
         "Option A",
         "Option B",
@@ -82,13 +82,13 @@ export const garndtestByCategory: Record<string, TestQuestion[31]> = {
         "Option D"
       ],
       "correctAnswer": 0,
-      "explanation": "Pulse rate is not a part of revised trauma score.\nThe components of Revised Trauma Score (RTS) are: Systolic Blood pressure (SBP), Glasgow coma scale (GCS) and Respiratory rate (RR).\nRTS = (0.93",
-      "category": "Mini-Test-1-Emergency-Nursing",
+      "explanation": "External PGE 1 or prostaglandin E1 is used to maintain the patency of ductus arteriosus in neonates with congenital heart defects. It is used to promote mixing of pulmonary and systemic blood flow or",
+      "category": "Grand-Test-1-Prelims",
       "difficulty": "Medium"
     },
     {
       "id": 7,
-      "question": "A 65-year-old hypertensive patient arrives in the emergency department with an ischemic stroke and receives tissue plasminogen activator (t-PA) administration. What is the priority nursing assessment?",
+      "question": "A nurse receives an 11-year-old child in the OPD with complaints of fever during an epidemic of influenza. The nurse knows that which drug should be avoided for this child?",
       "options": [
         "Option A",
         "Option B",
@@ -96,13 +96,13 @@ export const garndtestByCategory: Record<string, TestQuestion[31]> = {
         "Option D"
       ],
       "correctAnswer": 0,
-      "explanation": "The time of onset of a stroke to t-PA administration is critical. Administration within 3 hours has better outcomes. Tissue plasminogen activator (tPA) is classified as a serine protease (enzymes that",
-      "category": "Mini-Test-1-Emergency-Nursing",
+      "explanation": "The child is having fever of vital origin, in such cases administration of aspirin should be avoided in children due to the risk of developing Reyes syndrome. It is a rare and potentially fatal pediat",
+      "category": "Grand-Test-1-Prelims",
       "difficulty": "Medium"
     },
     {
       "id": 8,
-      "question": "A 16-year-old patient involved in a motor vehicle accident arrives in the ED unconscious and severely hypotensive. He is suspected to have several fractures of his pelvis and legs. Which of the following parenteral fluids is the best choice for his current condition?",
+      "question": "A nurse receives an adolescent in the ER with complaint of consuming 25 tablets of paracetamol (500 mg). The nurse should anticipate prescription of which of the following drug to manage acetaminophen toxicity?",
       "options": [
         "Option A",
         "Option B",
@@ -110,13 +110,13 @@ export const garndtestByCategory: Record<string, TestQuestion[31]> = {
         "Option D"
       ],
       "correctAnswer": 0,
-      "explanation": "In a trauma situation, the first blood product given is unmatched (O negative) packed red blood cells. Fresh frozen plasma often is used to replace clotting factors. Lactated Ringer’s solution or 0.9%",
-      "category": "Mini-Test-1-Emergency-Nursing",
+      "explanation": "Acetaminophen toxicity is managed by the anti-dote, N-acetylcysteine. It is protective against liver toxicity if given within 8 hours after ingestion. It prevents the binding of NAPQI (toxic metabolit",
+      "category": "Grand-Test-1-Prelims",
       "difficulty": "Medium"
     },
     {
       "id": 9,
-      "question": "A patient is brought to the emergency department in an unresponsive state and a diagnosis of hyper osmolar hyperglycemic syndrome is made. The nurse would immediately prepare to initiate which anticipated health care provider’s prescription?",
+      "question": "A senior nurse is teaching to a group of nursing students about the use of NSAIDs for pain relief. NSAIDs can be prescribed for pain relief in which of the following patient?",
       "options": [
         "Option A",
         "Option B",
@@ -124,13 +124,13 @@ export const garndtestByCategory: Record<string, TestQuestion[31]> = {
         "Option D"
       ],
       "correctAnswer": 0,
-      "explanation": "The primary goal of treatment in hyperosmolar hyperglycemic syndrome (HHS) is to rehydrate the patient to restore fluid volume and to correct electrolyte deficiency.\nIntravenous fluid replacemen",
-      "category": "Mini-Test-1-Emergency-Nursing",
+      "explanation": "NSAIDs (Non-steroidal anti-inflammatory drugs) are used as antipyretic, anti-inflammatory, and analgesic agents. They are useful for treating muscle pain, dysmenorrhea, arthritic conditions, pyrexia,",
+      "category": "Grand-Test-1-Prelims",
       "difficulty": "Medium"
     },
     {
       "id": 10,
-      "question": "A client arrives in the emergency department with a shoulder injury after falling from a stepladder. When the nurse assesses the client, which finding is the best indication that the shoulder has been dislocated?",
+      "question": "A nurse receives a 3-year old child in the ER with complaint of choking over a peanut. As the nurse examines the child, she observes that the child becomes unresponsive. What should be the next step of management by the nurse?",
       "options": [
         "Option A",
         "Option B",
@@ -138,13 +138,13 @@ export const garndtestByCategory: Record<string, TestQuestion[31]> = {
         "Option D"
       ],
       "correctAnswer": 0,
-      "explanation": "A dislocation is caused by the tearing of the ligaments that connect and hold two bone ends within a joint, resulting in temporary displacement of the bone from its normal position. When the nurse ass",
-      "category": "Mini-Test-1-Emergency-Nursing",
+      "explanation": "Choking is the blockage or hindrance of respiration by a foreign body obstruction in the airway. The approach to a choking patient/child should begin with an assessment of the ABCs (airway, breathing,",
+      "category": "Grand-Test-1-Prelims",
       "difficulty": "Medium"
     },
     {
       "id": 11,
-      "question": "The nurse suspects that the victim has sustained rib fractures. Which assessment finding is the best indication that the client is experiencing secondary complications from the fractured ribs?",
+      "question": "A nurse assisted a normal vaginal delivery of a primigravida in the labor room with no antenatal records. The nurse assesses the maturity of the baby weighing 2.5 kg. Which of the following finding would help the nurse in determining prematurity in this child?",
       "options": [
         "Option A",
         "Option B",
@@ -152,13 +152,13 @@ export const garndtestByCategory: Record<string, TestQuestion[31]> = {
         "Option D"
       ],
       "correctAnswer": 0,
-      "explanation": "The ribs enclose the lungs. This makes injuries to the pulmonary system the primary complication associated with fractured ribs. Broken ribs may puncture the pleura and collapse a lung. One classic si",
-      "category": "Mini-Test-1-Emergency-Nursing",
+      "explanation": "Please provide explanation/rationale/solution",
+      "category": "Grand-Test-1-Prelims",
       "difficulty": "Medium"
     },
     {
       "id": 12,
-      "question": "Apart from the suspected rib fractures, the nurse sees a bone fragment protruding from the client’s thigh as well as profuse bleeding from the wound. Which technique is most appropriate to control the bleeding?",
+      "question": "A mother delivers a 4 kg female baby at 43 weeks +2 days gestation. Which of the following neonatal complication is unlikely to be associated in this condition?",
       "options": [
         "Option A",
         "Option B",
@@ -166,13 +166,13 @@ export const garndtestByCategory: Record<string, TestQuestion[31]> = {
         "Option D"
       ],
       "correctAnswer": 0,
-      "explanation": "The best method to control bleeding in the case of a compound fracture is to compress the major artery above the injury site. Direct pressure on the wound may cause additional injuries to the soft tis",
-      "category": "Mini-Test-1-Emergency-Nursing",
+      "explanation": "Post-term pregnancy is a pregnancy that extends to 42 weeks of gestation or beyond. The fetal complications of postmaturity are:Meconium aspiration.Short-term complications such as hypoglycaemia, seiz",
+      "category": "Grand-Test-1-Prelims",
       "difficulty": "Medium"
     },
     {
       "id": 13,
-      "question": "The nurse suspects that the accident victim might also have a broken back. Which is the most preferred position when transporting a victim with a possible back injury?",
+      "question": "The nurse after assisting the delivery of a female newborn observes an ecchymotic and edematous swelling on her scalp. The nurse should suspect which of the following conditions?",
       "options": [
         "Option A",
         "Option B",
@@ -180,13 +180,13 @@ export const garndtestByCategory: Record<string, TestQuestion[31]> = {
         "Option D"
       ],
       "correctAnswer": 0,
-      "explanation": "The neck and back of any accident victim with a suspected spinal injury should be immobilized before transport. The victim is typically positioned flat on the back (supine) and secured to a rigid stre",
-      "category": "Mini-Test-1-Emergency-Nursing",
+      "explanation": "The clinical finding of a diffuse ecchymotic and edematous collection of serosanguinous fluid in the subcutaneous layer of the scalp is called caput succedaneum. It is a benign condition associated wi",
+      "category": "Grand-Test-1-Prelims",
       "difficulty": "Medium"
     },
     {
       "id": 14,
-      "question": "When a foreign body becomes embedded in a client’s eye, which nursing action should be taken first before referring the client for emergency treatment?",
+      "question": "The nurse is caring for a newborn who develops jaundice at day 2 of life. The yellowish discoloration first appeared on the sclera and then progresses towards the trunk. The paediatrician started the phototherapy and discoloration completely disappeared by day 7 of the treatment. This indicates which condition?",
       "options": [
         "Option A",
         "Option B",
@@ -194,13 +194,13 @@ export const garndtestByCategory: Record<string, TestQuestion[31]> = {
         "Option D"
       ],
       "correctAnswer": 0,
-      "explanation": "The eyes are patched loosely with the lids closed to reduce further injury by blinking and eye movement. Instilling antibiotic ointment interferes with the medical examination, although antibiotic oin",
-      "category": "Mini-Test-1-Emergency-Nursing",
+      "explanation": "Please provide explanation/rationale/solution",
+      "category": "Grand-Test-1-Prelims",
       "difficulty": "Medium"
     },
     {
       "id": 15,
-      "question": "A victim is brought to the emergency department with an electrical burn. When examining the electrical burn on the victim, which assessment is most important for the nurse to determine?",
+      "question": "A nurse is caring for a 2.4 kg term neonate born via normal vaginal delivery at 38 weeks of gestation of a Diabetic primigravida. The nurse knows that the baby is at risk of developing hypoglycaemia. What blood glucose level indicate neonatal hypoglycaemia?",
       "options": [
         "Option A",
         "Option B",
@@ -208,13 +208,13 @@ export const garndtestByCategory: Record<string, TestQuestion[31]> = {
         "Option D"
       ],
       "correctAnswer": 0,
-      "explanation": "One of the most serious types of burns is an electrical burn. An electrical burn has an entry and exit wound site; it is essential to determine their locations. Typically, the entry wound is ischemic,",
-      "category": "Mini-Test-1-Emergency-Nursing",
+      "explanation": "Infants born to diabetic mothers often secrete higher amounts of insulin to accommodate for excess fetal glucose concentrations. Therefore, they are at risk for hypoglycemia. Hypoglycemia is con",
+      "category": "Grand-Test-1-Prelims",
       "difficulty": "Medium"
     },
     {
       "id": 16,
-      "question": "What is the most effective method for restoring circulation in a pulseless victim?",
+      "question": "A nurse while caring for a term male baby observes that neonate is having a seizure episode. Which of the following is the common cause of seizures in this baby?",
       "options": [
         "Option A",
         "Option B",
@@ -222,13 +222,13 @@ export const garndtestByCategory: Record<string, TestQuestion[31]> = {
         "Option D"
       ],
       "correctAnswer": 0,
-      "explanation": "An automated electronic defibrillator (AED) is a portable, battery-operated device that analyzes heart rhythms and delivers an electrical shock to restore a functional heartbeat. Early defibrillation",
-      "category": "Mini-Test-1-Emergency-Nursing",
+      "explanation": "The most common cause of seizures in a term neonate is HIE (Hypoxic Ischemic Encephalopathy), a specific syndrome characterized by alterations in behavior, neurological signs and ischemic and/or hemor",
+      "category": "Grand-Test-1-Prelims",
       "difficulty": "Medium"
     },
     {
       "id": 17,
-      "question": "After the client has been successfully resuscitated by the nurse, which body position is most correct while awaiting transfer to the emergency department?",
+      "question": "A nurse is preparing to withdraw blood sample for ABG from a client admitted in the medical unit. The nurse knows that which of the following should not be done before drawing blood for ABG?",
       "options": [
         "Option A",
         "Option B",
@@ -236,13 +236,13 @@ export const garndtestByCategory: Record<string, TestQuestion[31]> = {
         "Option D"
       ],
       "correctAnswer": 0,
-      "explanation": "The recovery position after successful cardiopulmonary resuscitation (CPR) is a side-lying position with the upper leg flexed. This position helps protect and maintain the airway and prevents aspirati",
-      "category": "Mini-Test-1-Emergency-Nursing",
+      "explanation": "An arterial blood sample (ABG) is collected from an artery, primarily to determine arterial blood gases. Allen test is performed before obtaining blood sample for ABG to look for collateral circulatio",
+      "category": "Grand-Test-1-Prelims",
       "difficulty": "Medium"
     },
     {
       "id": 18,
-      "question": "Based on these findings select the most appropriate interventions to be taken by the nurse to manage this patient?",
+      "question": "A nurse is analysing the ABG analysis of a client admitted in the medical unit. The ABG result shows ph 7.55, Pco2 48 mmHg, and HCO3- 30 mEq/l. The nurse should suspect which of the following acid-base imbalance?",
       "options": [
         "Option A",
         "Option B",
@@ -250,13 +250,13 @@ export const garndtestByCategory: Record<string, TestQuestion[31]> = {
         "Option D"
       ],
       "correctAnswer": 0,
-      "explanation": "Please provide explanation/rationale/solution",
-      "category": "Mini-Test-1-Emergency-Nursing",
+      "explanation": "The given ABG result shows compensated metabolic alkalosis in which pH is 7.55 which is higher than the normal limit (7.35-7.45). It is characterized by a higher level of HCO3- and a compensator",
+      "category": "Grand-Test-1-Prelims",
       "difficulty": "Medium"
     },
     {
       "id": 19,
-      "question": "You have received a victim with a history of fall from 3rd floor and on examination the victim is unresponsive. Which method the nurse will use to assess the airway in this victim?",
+      "question": "A nurse receives a client in the ER following severe abdominal pain. The nurse while assessing the client observes that he is lying in supine position and resistant to move. On examination, the client has a shallow breathing. The nurse should suspect which of the following condition?",
       "options": [
         "Option A",
         "Option B",
@@ -264,13 +264,13 @@ export const garndtestByCategory: Record<string, TestQuestion[31]> = {
         "Option D"
       ],
       "correctAnswer": 0,
-      "explanation": "As in the given scenario, victim came with a history of fall from 3rd floor, which expose the victim for a higher risk of cervical fracture due to which the jaw thrust is most ideal method of op",
-      "category": "Mini-Test-1-Emergency-Nursing",
+      "explanation": "The clinical signs are suggestive of peritonitis, an inflammation of peritoneum. The patient lies supine resisting movement and also has shallow breathing due to increase in pain with the movement. He",
+      "category": "Grand-Test-1-Prelims",
       "difficulty": "Medium"
     },
     {
       "id": 20,
-      "question": "Which of the following fluid type is used to manipulate fluid shifts among compartments?",
+      "question": "Which of the following statement is correct about postural hypotension?",
       "options": [
         "Option A",
         "Option B",
@@ -278,13 +278,13 @@ export const garndtestByCategory: Record<string, TestQuestion[31]> = {
         "Option D"
       ],
       "correctAnswer": 0,
-      "explanation": "Albumin (most abundant plasma protein) is a colloid that is used to manipulate fluid shifts among compartments. Albumin is also a colloid fluid administered to patients in need of fluid resuscitation,",
-      "category": "Mini-Test-1-Emergency-Nursing",
+      "explanation": "Postural hypotension also known as orthostatic hypotension is defined as a sustained reduction in Systolic blood pressure (SBP) of at least 20 mmHg or Diastolic blood pressure (DBP) of 10 mmHg within",
+      "category": "Grand-Test-1-Prelims",
       "difficulty": "Medium"
     },
     {
       "id": 21,
-      "question": "The patient with O+ blood group is in need of an emergency blood transfusion but the blood bank does not have any O+ blood available. Which potential unit of blood could be given to the patient?",
+      "question": "A nurse is caring for a client admitted in the surgical unit diagnosed with Crohn’s diseases. The surgical resection of damaged area of intestine is planned for the client. The nurse knows that removal of which of the following part of intestine will cause steatorrhea in this client?",
       "options": [
         "Option A",
         "Option B",
@@ -292,13 +292,13 @@ export const garndtestByCategory: Record<string, TestQuestion[31]> = {
         "Option D"
       ],
       "correctAnswer": 0,
-      "explanation": "O- negative blood is considered as the universal donor because it does not contain the antigens A, B, or Rh. (AB+ is considered the universal recipient because it has all the antigens on the blood).Ot",
-      "category": "Mini-Test-1-Emergency-Nursing",
+      "explanation": "Ileal resection in Crohn’s disease causes defective bile salt absorption and may give rise to cholerrheic or a steatogenic enteropathy. Ileum is the site of bile acids and vitamin B12 absorption.",
+      "category": "Grand-Test-1-Prelims",
       "difficulty": "Medium"
     },
     {
       "id": 22,
-      "question": "Which of the following lung volume is used while providing abdominal thrust?",
+      "question": "A nurse is monitoring the lab values of a post-operative patient. Which of the following lab values will be decreased in a patient experiencing post-operative rise in ADH (Anti-diuretic hormone)?",
       "options": [
         "Option A",
         "Option B",
@@ -306,13 +306,13 @@ export const garndtestByCategory: Record<string, TestQuestion[31]> = {
         "Option D"
       ],
       "correctAnswer": 0,
-      "explanation": "Lung Volumes (mL)\n\n\n\n\nMeasurement \n\n\nTypical Value\n\n\nDefinition\n\n\n\n\nTidal volume (TV)\n\n\n500 - 750\n\n\nAmount of air that enters or leaves\nlungs",
-      "category": "Mini-Test-1-Emergency-Nursing",
+      "explanation": "SIADH (Syndrome of inappropriate anti-diuretic hormone) is a condition defined by the unsuppressed release of Anti-diuretic hormone (ADH) from the pituitary gland or non-pituitary sources or its conti",
+      "category": "Grand-Test-1-Prelims",
       "difficulty": "Medium"
     },
     {
       "id": 23,
-      "question": "A first aid provider found an adult victim who is unresponsive with no pulse and gasping. The single rescuer has activated the emergency medical service. After starting the chest compression how frequently the rescuer need to assess the patient for the sign of pulse?",
+      "question": "A nurse receives a patient in the medical-surgical unit diagnosed with pancreatitis. The nurse should anticipate that which of the following electrolyte abnormality is most likely to occur in this patient?",
       "options": [
         "Option A",
         "Option B",
@@ -320,13 +320,13 @@ export const garndtestByCategory: Record<string, TestQuestion[31]> = {
         "Option D"
       ],
       "correctAnswer": 0,
-      "explanation": "After providing 5 cycle of CPR (2 minutes’ duration), the rescuer should check for return of spontaneous circulation which is palpable pulse.\n            \n                Question No: 31",
-      "category": "Mini-Test-1-Emergency-Nursing",
+      "explanation": "Hypocalcemia is a frequent finding in acute pancreatitis. It occurs due to autodigestion of mesenteric fat by pancreatic enzymes and release of free fatty acids, which form calcium salts, transient hy",
+      "category": "Grand-Test-1-Prelims",
       "difficulty": "Medium"
     },
     {
       "id": 24,
-      "question": "The process of triage in emergency department is based on which of the following method?",
+      "question": "A nurse receives a client in the ER following RTA (road traffic accident). On examination, the client is breathless, has hypotension, and his neck veins are distended. The auscultation findings reveal muffled heart sound. The nurse should suspect which of the following condition?",
       "options": [
         "Option A",
         "Option B",
@@ -334,13 +334,13 @@ export const garndtestByCategory: Record<string, TestQuestion[31]> = {
         "Option D"
       ],
       "correctAnswer": 0,
-      "explanation": "Triage uses a systematic approach such as the START method which is a simple triage and used for rapid treatment.\n\n\n\n\n            \n                Question No: 34\n                The next best r",
-      "category": "Mini-Test-1-Emergency-Nursing",
+      "explanation": "The clinical findings including distended neck veins, muffled heart sound, and hypotension are the part of Beck’s triad, the classical finding seen in cardiac tamponade. It is a medical or traumatic e",
+      "category": "Grand-Test-1-Prelims",
       "difficulty": "Medium"
     },
     {
       "id": 25,
-      "question": "The nurse is caring for an adult who was admitted for observation following an automobile accident. The client has several lacerations that were sutured in the emergency room and a fractured leg that has been casted. The baseline vital signs are BP = 120/72, P = 76, and R = 16. One hour after arriving on the unit, the client’s vital signs are BP = 108/68, P = 90, and R = 22. The nurse most correctly interprets these results to mean that the client may be developing which condition?",
+      "question": "A nurse receives a client in the medicine OPD with complaints of abdominal pain with burning sensation. The nurse while obtaining history is informed by the client that pain usually improves after taking food. He also complains of severe pain at night during sleep. On examination, the pain was found to be in the epigastrium. The nurse should suspect which of the following condition?",
       "options": [
         "Option A",
         "Option B",
@@ -349,12 +349,12 @@ export const garndtestByCategory: Record<string, TestQuestion[31]> = {
       ],
       "correctAnswer": 0,
       "explanation": "Please provide explanation/rationale/solution",
-      "category": "Mini-Test-1-Emergency-Nursing",
+      "category": "Grand-Test-1-Prelims",
       "difficulty": "Medium"
     },
     {
       "id": 26,
-      "question": "The nurse in the ED is caring for a 4 year-old brought in by his parents who state that the child will not stop crying and pulling at his ear. Based on the information collected by the nurse, which of the following statements applies to the diagnosis of external otitis?",
+      "question": "A client is presented with bloody diarrhea with mucus and abdominal pain. The examination reveals pain in left lower quadrant. The nurse should suspect which of the following?",
       "options": [
         "Option A",
         "Option B",
@@ -362,13 +362,13 @@ export const garndtestByCategory: Record<string, TestQuestion[31]> = {
         "Option D"
       ],
       "correctAnswer": 0,
-      "explanation": "Please provide explanation/rationale/solution",
-      "category": "Mini-Test-1-Emergency-Nursing",
+      "explanation": "The clinical finding is suggestive of ulcerative colitis, an inflammatory bowel disease. It presents as bloody diarrhea with or without mucus, tenesmus, a sensation of incomplete evacuation, and abdom",
+      "category": "Grand-Test-1-Prelims",
       "difficulty": "Medium"
     },
     {
       "id": 27,
-      "question": "A patient is brought to the ER following a motor vehicle accident in which he sustained head trauma. Preliminary assessment reveals a vision deficit in the patient’s left eye. The nurse should associate this abnormal finding with trauma to which of the following cerebral lobes?",
+      "question": "The GCS assessment finding reveals that the patient is in a persistent vegetative state. Which of the following statement is incorrect about this term?",
       "options": [
         "Option A",
         "Option B",
@@ -376,13 +376,13 @@ export const garndtestByCategory: Record<string, TestQuestion[31]> = {
         "Option D"
       ],
       "correctAnswer": 0,
-      "explanation": "The posterior lobe of the cerebral hemisphere is responsible for visual interpretation. The temporal lobe contains the auditory receptive areas. The parietal lobe contains the primary sensory cortex,",
-      "category": "Mini-Test-1-Emergency-Nursing",
+      "explanation": "A persistent vegetative state also known as Post coma unresponsiveness (PCU), is a chronic disorder in which an individual with severe brain damage is awake but shows no evidence of awareness of their",
+      "category": "Grand-Test-1-Prelims",
       "difficulty": "Medium"
     },
     {
       "id": 28,
-      "question": "A 3-year-old child is hospitalized with burns covering her trunk and lower extremities. Which of the following would the nurse use to assess adequacy of fluid resuscitation in the burned child?",
+      "question": "The nurse performs a 12-lead ECG on a patient who has come to emergency department reporting chest pain. Where should the nurse place the electrode for lead V1?",
       "options": [
         "Option A",
         "Option B",
@@ -390,13 +390,13 @@ export const garndtestByCategory: Record<string, TestQuestion[31]> = {
         "Option D"
       ],
       "correctAnswer": 0,
-      "explanation": "Blood pressure can remain normotensive even in a state of hypovolemia.Serum potassium is not reliable for determining adequacy of fluid resuscitation.Urine output, alteration in sensorium, and capilla",
-      "category": "Mini-Test-1-Emergency-Nursing",
+      "explanation": "A 12 lead ECG measures electrical potential and helps make a definitive diagnosis of acute myocardial infraction.\nThe V1 lead is placed at the fourth intercostal space to the right of the sternu",
+      "category": "Grand-Test-1-Prelims",
       "difficulty": "Medium"
     },
     {
       "id": 29,
-      "question": "Which of the following ECG changes would be seen as a positive myocardial stress test response?",
+      "question": "Which occupation increases risk for silicosis?",
       "options": [
         "Option A",
         "Option B",
@@ -404,13 +404,13 @@ export const garndtestByCategory: Record<string, TestQuestion[31]> = {
         "Option D"
       ],
       "correctAnswer": 0,
-      "explanation": "Hyperacute T waves occur with hyperkalemia. Prolongation of the PR interval occurs with first-degree AV block. Horizontal ST-segment depression of >1 mm during exercise is definitely a positive criter",
-      "category": "Mini-Test-1-Emergency-Nursing",
+      "explanation": "Silicosis\n\nDefinition: Silicosis is an occupational lung disease caused by inhalation of silica dust.\nEpidemiology: Silicosis is seen in individuals who work in mining, quarrying, tunnelling, gla",
+      "category": "Grand-Test-1-Prelims",
       "difficulty": "Medium"
     },
     {
       "id": 30,
-      "question": "Which of the following signs and symptoms indicates a tension pneumothorax as compared to an open pneumothorax?",
+      "question": "Which of the following statement is correct about gestational hypertension?",
       "options": [
         "Option A",
         "Option B",
@@ -418,13 +418,13 @@ export const garndtestByCategory: Record<string, TestQuestion[31]> = {
         "Option D"
       ],
       "correctAnswer": 0,
-      "explanation": "Option a, b, d: These occur in both tension pneumothorax and open pneumothorax. Option c: The tension pneumothorax acts like a one- way valve so that the pneumothorax increases with each breath. Event",
-      "category": "Mini-Test-1-Emergency-Nursing",
+      "explanation": "Gestational hypertension is defined as BP>140/90 after 20 weeks of gestation. An increase in BP before 20 weeks of gestation is considered pre-existing hypertension. Hence, option c. is correct.",
+      "category": "Grand-Test-1-Prelims",
       "difficulty": "Medium"
     },
     {
       "id": 31,
-      "question": "Which of the following would have the physiological effect of decreasing intracranial pressure (ICP)?",
+      "question": "The level of which of the following is most likely to be seen low in patients with pre-eclampsia?",
       "options": [
         "Option A",
         "Option B",
@@ -432,9 +432,4 @@ export const garndtestByCategory: Record<string, TestQuestion[31]> = {
         "Option D"
       ],
       "correctAnswer": 0,
-      "explanation": "An increase in core body temperature increases metabolism and results in an increase in ICP. Decreased serum osmolality indicates a fluid overload and may result in an increase in ICP. Hypo-osmolar fl",
-      "category": "Mini-Test-1-Emergency-Nursing",
-      "difficulty": "Medium"
-    }
-  ]
-};
+      "explanation": "In normal pregnancy GFR increases but in case of pre-eclampsia, it decrea

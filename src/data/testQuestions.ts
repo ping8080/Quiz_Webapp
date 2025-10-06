@@ -235,4 +235,5 @@ export const testQuestions = {
   ],
 };
 
+export const testQuestionsByCategory = testQuestions; // ✅ ADD THIS LINE
 export default testQuestions;

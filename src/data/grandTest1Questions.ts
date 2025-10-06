@@ -1,6 +1,7 @@
 // Test Questions with Explanations/Rationales/Solutions
 // Note: 'explanation' field contains rationale/solution/reasoning for the correct answer
-export const grandTest1Questions = [
+export const testQuestionsByCategory: Record<string, TestQuestion[]> = {
+  'grand-test-1': [
     {
       "id": 1,
       "question": "The emergency nurse is admitting a patient experiencing a GI bleed who is believed to be in the compensatory stage of shock. What assessment finding would be most consistent with the early stage of compensation?",

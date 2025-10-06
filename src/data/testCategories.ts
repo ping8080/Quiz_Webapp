@@ -28,7 +28,7 @@ const mcqSubcategories = Array.from({ length: 94 }, (_, i) => ({
   totalQuestions: 25,
   estimatedTime: 30,
   difficulty: 'Medium' as const,
-  isPremium: true
+  isPremium: i >= 10 // First 10 are free, rest are premium
 }));
 
 const nstSubcategories = Array.from({ length: 6 }, (_, i) => ({
@@ -61,7 +61,7 @@ const nntSubcategories = Array.from({ length: 10 }, (_, i) => ({
   isPremium: true
 }));
 
-const nursingEducationSubcategories = Array.from({ length: 21 }, (_, i) => ({
+const nursingEducathSubcategories = Array.from({ length: 21 }, (_, i) => ({
   id: `nursing-educath-${i + 1}`,
   name: `Nursing Educath ${i + 1}`,
   description: `Educational nursing test focusing on theoretical concepts - Test ${i + 1}`,
@@ -146,11 +146,11 @@ export const testCategories: TestCategory[] = [
     id: 'mcq',
     name: 'MCQ',
     description: 'Multiple Choice Questions covering various nursing topics and specialties',
-    icon: '🧠',
+    icon: '❓',
     subcategories: mcqSubcategories,
     totalQuestions: mcqSubcategories.reduce((sum, sub) => sum + sub.totalQuestions, 0),
     totalTime: mcqSubcategories.reduce((sum, sub) => sum + sub.estimatedTime, 0),
-    isPremium: true
+    isPremium: false // Mixed - some free, some premium
   },
   {
     id: 'nst',

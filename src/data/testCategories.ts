@@ -343,12 +343,3 @@ export const testCategories: TestCategory[] = [
     estimatedTime: 45
   }
 ];
-// ✅ New combined category
-export const testCategories: TestCategory[] = [
-  {
-    id: 'nnl-one',
-    name: 'NNL One',
-    description: 'All nursing tests under one unified category',
-    subcategories: [...grandTestSubcategories, ...hytSubcategories, ...mcqSubcategories, ...nstSubcategories, ...nsatSubcategories, ...nntSubcategories, ...nursingEducationSubcategories, ...specialTestSubcategories, ...satSubcategories, ...super15Subcategories, ...super30Subcategories, ...super50Subcategories]
-  }
-];

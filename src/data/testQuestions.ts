@@ -187,7 +187,18 @@ export const testQuestionsByCategory: Record<string, TestQuestion[]> = {
       category: "Infection Control",
       difficulty: 'Medium'
     }
-  ]
+    ],
+  'grand-test-1': [
+    {
+      id: 101,
+    question: "Sample Grand Test Question?",
+    options: ["A", "B", "C", "D"],
+    correctAnswer: 1,
+    explanation: "Explanation here",
+    category: "Grand Test 1",
+    difficulty: "Easy"
+  }
+]
 };
 
 // Add more questions for other categories as needed

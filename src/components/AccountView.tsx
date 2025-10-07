@@ -248,10 +248,10 @@ export const AccountView: React.FC<AccountViewProps> = ({
           <div className="flex items-center justify-between py-3 border-b border-gray-100">
             <span className="text-gray-700">Contact Support</span>
             <button 
-              onClick={() => window.open('https://t.me/ModuleRoBot', '_blank')}
+              onClick={() => window.open('https://t.me/NursingExamBot', '_blank')}
               className="text-blue-600 hover:text-blue-700 font-semibold"
             >
-              @ModuleRoBot
+              @Admin
             </button>
           </div>
           

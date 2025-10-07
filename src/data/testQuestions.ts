@@ -1,6 +1,6 @@
 import { TestQuestion } from '../types/test';
 
-// Sample questions for GrandTest subcategorie 1
+// Sample questions for GrandTest subcategorie 
 export const testQuestionsByCategory: Record<string, TestQuestion[]> = {
   'Grand-test-1': [
     {

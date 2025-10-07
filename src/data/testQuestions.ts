@@ -1,8 +1,8 @@
 import { TestQuestion } from '../types/test';
 
-// Sample questions for GrandTest subcategorie 
+// Sample questions for different subcategories
 export const testQuestionsByCategory: Record<string, TestQuestion[]> = {
-  'Grand-test-1': [
+  'nursing-fundamentals': [
     {
       id: 1,
       question: "What is the primary goal of nursing care?",

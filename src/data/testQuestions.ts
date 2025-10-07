@@ -1,5 +1,3 @@
-// testQuestions.ts
-
 export interface Question {
   id: number;
   text: string;
@@ -19,7 +17,7 @@ export interface Category {
   subcategories: Subcategory[];
 }
 
-// Common sample questions (you can edit them later)
+// 🔹 Common sample questions (you can replace later)
 const sampleQuestions: Question[] = [
   {
     id: 1,
@@ -35,6 +33,7 @@ const sampleQuestions: Question[] = [
   },
 ];
 
+// 🔹 All categories with 2 sample subcategories each
 export const categories: Category[] = [
   {
     id: 1,
@@ -133,3 +132,6 @@ export const categories: Category[] = [
     ],
   },
 ];
+
+// 🔹 Export alias (for compatibility with TestApp.tsx)
+export const testQuestionsByCategory = categories;

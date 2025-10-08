@@ -155,75 +155,99 @@ if (testQuestionsByCategory['anatomy-physiology']) {
 // Example questions for Grand Test 1
 const grandTest1Questions: TestQuestion[] = [
   {
-    id: 30001,
-    question: "What is the normal range for adult heart rate at rest?",
-    options: [
-      "60-100 beats per minute",
-      "50-90 beats per minute",
-      "70-110 beats per minute",
-      "80-120 beats per minute"
-    ],
-    correctAnswer: 0,
-    explanation: "The normal resting heart rate for adults is 60-100 beats per minute. Athletes may have lower rates due to better cardiovascular conditioning.",
-    category: "Grand Test",
-    difficulty: 'Hard'
-  },
-  {
-    id: 30002,
-    question: "Which of the following is the most common cause of nosocomial infections?",
-    options: [
-      "Poor hand hygiene",
-      "Contaminated medical equipment",
-      "Airborne pathogens",
-      "Patient's own flora"
-    ],
-    correctAnswer: 0,
-    explanation: "Poor hand hygiene is the leading cause of healthcare-associated infections. Proper handwashing can prevent up to 50% of nosocomial infections.",
-    category: "Grand Test",
-    difficulty: 'Hard'
-  },
-  {
-    id: 30003,
-    question: "What is the first-line treatment for anaphylactic shock?",
-    options: [
-      "Corticosteroids",
-      "Epinephrine (Adrenaline)",
-      "Antihistamines",
-      "Bronchodilators"
-    ],
-    correctAnswer: 1,
-    explanation: "Epinephrine is the first-line treatment for anaphylaxis. It should be administered immediately via intramuscular injection, typically in the anterolateral thigh.",
-    category: "Grand Test",
-    difficulty: 'Hard'
-  },
-  {
-    id: 30004,
-    question: "Which position is most appropriate for a patient with acute respiratory distress?",
-    options: [
-      "Supine position",
-      "Trendelenburg position",
-      "High Fowler's position",
-      "Left lateral position"
-    ],
-    correctAnswer: 2,
-    explanation: "High Fowler's position (sitting upright at 60-90 degrees) facilitates maximum lung expansion and eases breathing for patients with respiratory distress.",
-    category: "Grand Test",
-    difficulty: 'Hard'
-  },
-  {
-    id: 30005,
-    question: "What is the therapeutic range for digoxin in adults?",
-    options: [
-      "0.5-2.0 ng/mL",
-      "1.0-2.0 ng/mL",
-      "0.8-2.0 ng/mL",
-      "1.2-2.4 ng/mL"
-    ],
-    correctAnswer: 2,
-    explanation: "The therapeutic range for digoxin is 0.8-2.0 ng/mL. Levels above 2.0 ng/mL increase the risk of digoxin toxicity.",
-    category: "Grand Test",
-    difficulty: 'Hard'
-  }
+            "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Please provide explanation",
+      "category": "Grand-Test-1-Prelims",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 15,
+      "question": "A nurse is caring for a 2.4 kg term neonate born via normal vaginal delivery at 38 weeks of gestation of a Diabetic primigravida. The nurse knows that the baby is at risk of developing hypoglycaemia. What blood glucose level indicate neonatal hypoglycaemia?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Please provide explanation",
+      "category": "Grand-Test-1-Prelims",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 16,
+      "question": "A nurse while caring for a term male baby observes that neonate is having a seizure episode. Which of the following is the common cause of seizures in this baby?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Please provide explanation",
+      "category": "Grand-Test-1-Prelims",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 17,
+      "question": "A nurse is preparing to withdraw blood sample for ABG from a client admitted in the medical unit. The nurse knows that which of the following should not be done before drawing blood for ABG?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Please provide explanation",
+      "category": "Grand-Test-1-Prelims",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 18,
+      "question": "A nurse is analysing the ABG analysis of a client admitted in the medical unit. The ABG result shows ph 7.55, Pco2 48 mmHg, and HCO3- 30 mEq/l. The nurse should suspect which of the following acid-base imbalance?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Please provide explanation",
+      "category": "Grand-Test-1-Prelims",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 19,
+      "question": "A nurse receives a client in the ER following severe abdominal pain. The nurse while assessing the client observes that he is lying in supine position and resistant to move. On examination, the client has a shallow breathing. The nurse should suspect which of the following condition?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Please provide explanation",
+      "category": "Grand-Test-1-Prelims",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 20,
+      "question": "Which of the following statement is correct about postural hypotension?",
+      "options": [
+        "Option A",
+        "Option B",
+        "Option C",
+        "Option D"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Please provide explanation",
+      "category": "Grand-Test-1-Prelims",
+      "difficulty": "Medium"
+    }
 ];
 
 // Replace placeholder questions with real ones for Grand Test 1

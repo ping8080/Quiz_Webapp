@@ -152,18 +152,8 @@ if (testQuestionsByCategory['anatomy-physiology']) {
   testQuestionsByCategory['anatomy-physiology'] = anatomyPhysiologyQuestions;
 }
 
-// Example questions for Grand Test 1
+// Real questions for Grand Test 1
 const grandTest1Questions: TestQuestion[] = [
-  {
-            "Option B",
-        "Option C",
-        "Option D"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Please provide explanation",
-      "category": "Grand-Test-1-Prelims",
-      "difficulty": "Medium"
-    },
     {
       "id": 15,
       "question": "A nurse is caring for a 2.4 kg term neonate born via normal vaginal delivery at 38 weeks of gestation of a Diabetic primigravida. The nurse knows that the baby is at risk of developing hypoglycaemia. What blood glucose level indicate neonatal hypoglycaemia?",

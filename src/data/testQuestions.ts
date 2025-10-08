@@ -195,7 +195,6 @@ export const getAllTestQuestions = (): TestQuestion[] => {
   return Object.values(testQuestionsByCategory).flat();
 };
 
-import { TestQuestion } from '../types/test';
 import { testCategories } from './testCategories';
 
 // Real questions for MCQ-2 (Drug Calculation)

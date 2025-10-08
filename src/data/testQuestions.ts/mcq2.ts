@@ -1,5 +1,6 @@
 import { TestQuestion } from '../types/test';
 import { testCategories } from './testCategories';
+import { mcq2RealQuestions } from './mcq2';
 
 
 // Real questions for MCQ-2 (Drug Calculation)

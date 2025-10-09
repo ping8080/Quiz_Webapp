@@ -789,6 +789,376 @@ if (testQuestionsByCategory['grand-test-1']) {
   testQuestionsByCategory['grand-test-1'] = grandTest1Questions;
 }
 
+// Real questions for MCQ Set 1
+const mcqSet1Questions: TestQuestion[] = [
+  {
+  id: '1',
+  question: 'Which part of the brain controls balance and coordination of voluntary muscle movements?',
+  options: ['Cerebrum', 'Cerebellum', 'Medulla oblongata', 'Pons'],
+  correctAnswer: 1,
+  explanation: 'The cerebellum lies posterior to the brainstem and coordinates voluntary muscle movements, posture, and balance. Damage to the cerebellum causes loss of coordination (ataxia). Hence, option b is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '2',
+  question: 'Which of the following organs is responsible for the secretion of bile?',
+  options: ['Liver', 'Gall bladder', 'Pancreas', 'Stomach'],
+  correctAnswer: 0,
+  explanation: 'The liver secretes bile that helps in emulsification and absorption of fats. The gall bladder stores and concentrates bile but does not produce it. Hence, option a is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '3',
+  question: 'The functional unit of the kidney is called:',
+  options: ['Nephron', 'Neuron', 'Glomerulus', 'Tubule'],
+  correctAnswer: 0,
+  explanation: 'Each kidney contains about one million nephrons that filter blood, reabsorb required substances, and excrete wastes as urine. Hence, option a is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '4',
+  question: 'Which blood cells are responsible for antibody production?',
+  options: ['T-lymphocytes', 'B-lymphocytes', 'Neutrophils', 'Monocytes'],
+  correctAnswer: 1,
+  explanation: 'B-lymphocytes mature into plasma cells that produce antibodies. T-lymphocytes mediate cellular immunity, and neutrophils or monocytes act as phagocytes. Hence, option b is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '5',
+  question: 'Which of the following is the natural pacemaker of the heart?',
+  options: ['Atrioventricular node', 'Sinoatrial node', 'Bundle of His', 'Purkinje fibres'],
+  correctAnswer: 1,
+  explanation: 'The sinoatrial (SA) node, located in the right atrium, initiates the electrical impulse that determines heart rate and rhythm; hence it is called the natural pacemaker. Hence, option b is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '6',
+  question: 'Which hormone increases blood calcium levels?',
+  options: ['Calcitonin', 'Parathyroid hormone', 'Insulin', 'Thyroxine'],
+  correctAnswer: 1,
+  explanation: 'Parathyroid hormone (PTH) secreted by parathyroid glands increases blood calcium by promoting bone resorption and decreasing renal calcium excretion. Hence, option b is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '7',
+  question: 'Which vitamin is essential for normal vision?',
+  options: ['Vitamin A', 'Vitamin C', 'Vitamin D', 'Vitamin E'],
+  correctAnswer: 0,
+  explanation: 'Vitamin A (retinol) is required for the synthesis of rhodopsin in retinal cells; its deficiency causes night blindness. Hence, option a is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '8',
+  question: 'Which of the following organs produces insulin?',
+  options: ['Liver', 'Pancreas', 'Gall bladder', 'Stomach'],
+  correctAnswer: 1,
+  explanation: 'The β-cells of the islets of Langerhans in the pancreas secrete insulin, which regulates blood glucose levels. Hence, option b is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '9',
+  question: 'Which part of the eye regulates the amount of light entering it?',
+  options: ['Lens', 'Cornea', 'Iris', 'Retina'],
+  correctAnswer: 2,
+  explanation: 'The iris controls the diameter of the pupil and thus regulates the amount of light entering the eyeball. Hence, option c is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '10',
+  question: 'Which of the following is the site for gaseous exchange in the lungs?',
+  options: ['Bronchi', 'Bronchioles', 'Alveoli', 'Trachea'],
+  correctAnswer: 2,
+  explanation: 'Alveoli are microscopic air sacs where oxygen diffuses into blood and carbon dioxide diffuses out through the thin alveolar–capillary membrane. Hence, option c is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '11',
+  question: 'Which part of the brain regulates body temperature, hunger, and thirst?',
+  options: ['Cerebrum', 'Cerebellum', 'Hypothalamus', 'Medulla oblongata'],
+  correctAnswer: 2,
+  explanation: 'The hypothalamus is the main centre for autonomic and endocrine regulation. It maintains homeostasis by controlling temperature, appetite, thirst, and hormonal secretion through the pituitary gland. Hence, option c is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '12',
+  question: 'Which of the following is a fat-soluble vitamin?',
+  options: ['Vitamin B12', 'Vitamin C', 'Vitamin D', 'Vitamin B6'],
+  correctAnswer: 2,
+  explanation: 'Vitamins A, D, E, and K are fat-soluble and stored in the liver and fatty tissues. Vitamin D regulates calcium absorption. Hence, option c is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '13',
+  question: 'Deficiency of Vitamin C leads to which disease?',
+  options: ['Rickets', 'Scurvy', 'Pellagra', 'Beriberi'],
+  correctAnswer: 1,
+  explanation: 'Vitamin C deficiency causes scurvy, characterized by bleeding gums, poor wound healing, and anemia due to defective collagen synthesis. Hence, option b is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '14',
+  question: 'Which enzyme in saliva helps in the digestion of starch?',
+  options: ['Pepsin', 'Amylase', 'Lipase', 'Trypsin'],
+  correctAnswer: 1,
+  explanation: 'Salivary amylase (ptyalin) breaks down starch into maltose in the mouth. Pepsin acts on proteins in the stomach. Hence, option b is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '15',
+  question: 'Which of the following blood vessels carries oxygenated blood from lungs to the heart?',
+  options: ['Pulmonary vein', 'Pulmonary artery', 'Aorta', 'Superior vena cava'],
+  correctAnswer: 0,
+  explanation: 'The pulmonary vein carries oxygenated blood from the lungs to the left atrium, whereas the pulmonary artery carries deoxygenated blood from the heart to the lungs. Hence, option a is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '16',
+  question: 'The hormone responsible for milk production is:',
+  options: ['Oxytocin', 'Prolactin', 'Progesterone', 'Estrogen'],
+  correctAnswer: 1,
+  explanation: 'Prolactin, secreted by the anterior pituitary, stimulates milk secretion after childbirth. Oxytocin helps in milk ejection. Hence, option b is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '17',
+  question: 'Which part of the ear is responsible for maintaining body balance?',
+  options: ['Cochlea', 'Semicircular canals', 'Eustachian tube', 'Tympanic membrane'],
+  correctAnswer: 1,
+  explanation: 'The semicircular canals of the inner ear detect angular movements and help maintain equilibrium. The cochlea is involved in hearing. Hence, option b is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '18',
+  question: 'Which artery supplies oxygenated blood to the heart muscle?',
+  options: ['Coronary artery', 'Carotid artery', 'Pulmonary artery', 'Aortic arch'],
+  correctAnswer: 0,
+  explanation: 'The coronary arteries branch from the ascending aorta and supply oxygenated blood to the myocardium. Blockage leads to angina or myocardial infarction. Hence, option a is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '19',
+  question: 'Which of the following is the largest gland in the human body?',
+  options: ['Liver', 'Pancreas', 'Thyroid', 'Salivary gland'],
+  correctAnswer: 0,
+  explanation: 'The liver is the largest gland and performs vital metabolic, detoxifying, and synthetic functions including bile secretion. Hence, option a is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '20',
+  question: 'Which structure connects the fetus to the placenta?',
+  options: ['Yolk sac', 'Umbilical cord', 'Amniotic sac', 'Amnion'],
+  correctAnswer: 1,
+  explanation: 'The umbilical cord connects the fetus and placenta, containing blood vessels that allow exchange of nutrients, gases, and waste between mother and fetus. Hence, option b is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '21',
+  question: 'Which part of the brain controls respiration and heart rate?',
+  options: ['Cerebrum', 'Cerebellum', 'Medulla oblongata', 'Pons'],
+  correctAnswer: 2,
+  explanation: 'The medulla oblongata is part of the brainstem and regulates vital autonomic functions such as breathing, cardiac rhythm, and vasomotor control. Hence, option c is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '22',
+  question: 'Which of the following cells are phagocytic in nature?',
+  options: ['Lymphocytes', 'Monocytes', 'Eosinophils', 'Basophils'],
+  correctAnswer: 1,
+  explanation: 'Monocytes and macrophages are professional phagocytes that engulf and destroy pathogens and cellular debris. Neutrophils are also phagocytic. Hence, option b is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '23',
+  question: 'Which of the following is the largest part of the human brain?',
+  options: ['Cerebrum', 'Cerebellum', 'Pons', 'Medulla oblongata'],
+  correctAnswer: 0,
+  explanation: 'The cerebrum is the largest part of the brain and is responsible for higher mental functions such as reasoning, memory, and voluntary actions. Hence, option a is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '24',
+  question: 'Which of the following blood groups is known as the universal recipient?',
+  options: ['O negative', 'AB positive', 'A positive', 'B positive'],
+  correctAnswer: 1,
+  explanation: 'AB positive individuals can receive blood from all groups as they have both A and B antigens and no antibodies against them. Hence, option b is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '25',
+  question: 'Which of the following structures in the eye is responsible for vision in dim light?',
+  options: ['Cones', 'Rods', 'Cornea', 'Lens'],
+  correctAnswer: 1,
+  explanation: 'Rods are photoreceptor cells sensitive to low light intensity and are responsible for night vision. Cones function in bright light and color perception. Hence, option b is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '26',
+  question: 'Which blood vessels carry blood from different parts of the body to the heart?',
+  options: ['Arteries', 'Veins', 'Capillaries', 'Arterioles'],
+  correctAnswer: 1,
+  explanation: 'Veins carry deoxygenated blood from tissues to the heart, except pulmonary veins which carry oxygenated blood from lungs to the heart. Hence, option b is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '27',
+  question: 'Which valve prevents backflow of blood from left ventricle to left atrium?',
+  options: ['Tricuspid valve', 'Mitral valve', 'Pulmonary valve', 'Aortic valve'],
+  correctAnswer: 1,
+  explanation: 'The mitral (bicuspid) valve prevents backflow of blood from the left ventricle into the left atrium during ventricular contraction. Hence, option b is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '28',
+  question: 'Which part of the respiratory system prevents food from entering the windpipe?',
+  options: ['Epiglottis', 'Larynx', 'Pharynx', 'Trachea'],
+  correctAnswer: 0,
+  explanation: 'The epiglottis is a flap-like structure that closes over the glottis during swallowing to prevent food from entering the trachea. Hence, option a is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '29',
+  question: 'Which hormone regulates the sleep–wake cycle?',
+  options: ['Melatonin', 'Serotonin', 'Insulin', 'Cortisol'],
+  correctAnswer: 0,
+  explanation: 'Melatonin secreted by the pineal gland regulates the circadian rhythm or sleep–wake cycle. Its secretion increases in darkness and decreases in light. Hence, option a is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '30',
+  question: 'Which of the following bones is part of the axial skeleton?',
+  options: ['Femur', 'Humerus', 'Vertebra', 'Clavicle'],
+  correctAnswer: 2,
+  explanation: 'The axial skeleton includes the skull, vertebral column, and thoracic cage. The appendicular skeleton includes limbs and girdles. Hence, option c is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '31',
+  question: 'Which of the following organs produces digestive enzymes like trypsin and lipase?',
+  options: ['Liver', 'Pancreas', 'Gall bladder', 'Small intestine'],
+  correctAnswer: 1,
+  explanation: 'The pancreas secretes digestive enzymes such as trypsin, amylase, and lipase that aid in digestion of proteins, carbohydrates, and fats. Hence, option b is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '32',
+  question: 'Which blood cells help in blood clotting?',
+  options: ['RBCs', 'WBCs', 'Platelets', 'Lymphocytes'],
+  correctAnswer: 2,
+  explanation: 'Platelets (thrombocytes) release clotting factors that initiate the coagulation process to stop bleeding. Hence, option c is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '33',
+  question: 'Which of the following is the largest artery in the human body?',
+  options: ['Pulmonary artery', 'Aorta', 'Carotid artery', 'Femoral artery'],
+  correctAnswer: 1,
+  explanation: 'The aorta arises from the left ventricle and distributes oxygenated blood to all parts of the body through its branches. Hence, option b is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '34',
+  question: 'Which of the following hormones is secreted by the adrenal medulla?',
+  options: ['Aldosterone', 'Cortisol', 'Adrenaline', 'Insulin'],
+  correctAnswer: 2,
+  explanation: 'The adrenal medulla secretes adrenaline (epinephrine) and noradrenaline, which prepare the body for "fight or flight" response. Hence, option c is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '35',
+  question: 'Which chamber of the heart receives deoxygenated blood from the body?',
+  options: ['Left atrium', 'Right atrium', 'Left ventricle', 'Right ventricle'],
+  correctAnswer: 1,
+  explanation: 'The right atrium receives deoxygenated blood from the body through the superior and inferior vena cava. Hence, option b is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '36',
+  question: 'Which hormone regulates sodium and potassium balance in the body?',
+  options: ['Aldosterone', 'Cortisol', 'ADH', 'Insulin'],
+  correctAnswer: 0,
+  explanation: 'Aldosterone, secreted by the adrenal cortex, promotes sodium reabsorption and potassium excretion by the kidneys, maintaining electrolyte balance. Hence, option a is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '37',
+  question: 'Which part of the digestive system absorbs most of the nutrients?',
+  options: ['Stomach', 'Small intestine', 'Large intestine', 'Rectum'],
+  correctAnswer: 1,
+  explanation: 'The small intestine, particularly the jejunum and ileum, is responsible for absorption of most nutrients into the bloodstream. Hence, option b is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '38',
+  question: 'Which part of the female reproductive system is the site of fertilization?',
+  options: ['Ovary', 'Uterus', 'Fallopian tube', 'Cervix'],
+  correctAnswer: 2,
+  explanation: 'Fertilization usually occurs in the ampulla of the fallopian tube where the ovum and sperm meet. Hence, option c is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '39',
+  question: 'Which of the following organs stores bile?',
+  options: ['Liver', 'Gall bladder', 'Pancreas', 'Small intestine'],
+  correctAnswer: 1,
+  explanation: 'The gall bladder stores and concentrates bile produced by the liver, releasing it into the small intestine during digestion. Hence, option b is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '40',
+  question: 'Which of the following is a structural and functional unit of the nervous system?',
+  options: ['Axon', 'Neuron', 'Dendrite', 'Synapse'],
+  correctAnswer: 1,
+  explanation: 'The neuron is the structural and functional unit of the nervous system that transmits electrical impulses. Axon and dendrite are its components. Hence, option b is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+}
+];
+
+// Replace placeholder questions with real ones for MCQ Set 1
+if (testQuestionsByCategory['mcq-set-1']) {
+  testQuestionsByCategory['mcq-set-1'] = mcqSet1Questions;
+}
+
+  
 // Get all test questions as a flat array
 export const getAllTestQuestions = (): TestQuestion[] => {
   return Object.values(testQuestionsByCategory).flat();

@@ -1,8 +1,6 @@
 import { TestQuestion } from '../types/test';
 
 export const testQuestionsByCategory: Record<string, TestQuestion[]> = {
-  ...
-}
   "Grand Test 1": [
     {
       id: 1,

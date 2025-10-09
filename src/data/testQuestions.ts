@@ -411,9 +411,6 @@ if (testQuestionsByCategory['mcq-1']) {
 }
 ];
 
-
-testQuestionsByCategory['mcq-1'] = mcqSet1Questions;
-
 // Get all test questions as a flat array
 export const getAllTestQuestions = (): TestQuestion[] => {
   return Object.values(testQuestionsByCategory).flat();

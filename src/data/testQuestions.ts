@@ -230,7 +230,8 @@ const grandTest1Questions: TestQuestion[] = [
 if (testQuestionsByCategory['grand-test-1']) {
   testQuestionsByCategory['grand-test-1'] = grandTest1Questions;
 }
-},
+
+];
 
 // Real questions for MCQ Set 1   
 const mcqSet1Questions: TestQuestion[] = [

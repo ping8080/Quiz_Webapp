@@ -154,7 +154,6 @@ if (testQuestionsByCategory['anatomy-physiology']) {
 
 // Real questions for Grand Test 1
 const grandTest1Questions: TestQuestion[] = [
-    
     {
     id: '1',
     question: 'Which of the following statement is correct regarding arteries?',
@@ -424,7 +423,7 @@ const grandTest1Questions: TestQuestion[] = [
     explanation: 'The dermis, located beneath the epidermis, is a connective-tissue layer containing blood vessels, lymphatics, and nerve endings. The epidermis is avascular and receives nutrition by diffusion. Hence, option b is correct.',
     category: 'Grand Test-1 Prelims',
     difficulty: 'Moderate'
-  }
+  },
   {
     id: '21',
     question: 'Which of the following cells are responsible for antibody production?',
@@ -549,7 +548,7 @@ const grandTest1Questions: TestQuestion[] = [
     explanation: 'Monocytes circulating in blood and macrophages in tissues are professional phagocytes that engulf and digest pathogens. Neutrophils also show phagocytic activity, whereas eosinophils and basophils are mainly involved in allergic reactions. Hence, option b is correct.',
     category: 'Grand Test-1 Prelims',
     difficulty: 'Moderate'
-  }
+  },
   {
     id: '31',
     question: 'Which part of the brain controls balance and coordination of body movements?',
@@ -684,7 +683,7 @@ const grandTest1Questions: TestQuestion[] = [
     explanation: 'The medulla oblongata, part of the brainstem, regulates vital autonomic functions including respiration, cardiac rhythm, and vasomotor control. Hence, option c is correct.',
     category: 'Grand Test-1 Prelims',
     difficulty: 'Moderate'
-  }
+  },
   {
     id: '41',
     question: 'Which of the following structures connects the fetus with the placenta?',

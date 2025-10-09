@@ -232,9 +232,9 @@ if (testQuestionsByCategory['grand-test-1']) {
 }
 ];
 
-// MCQ Set 1   
+// Real questions for MCQ Set 1   
 const mcqSet1Questions: TestQuestion[] = [
-  {
+{
   id: '1',
   question: 'Which part of the brain controls balance and coordination of voluntary muscle movements?',
   options: ['Cerebrum', 'Cerebellum', 'Medulla oblongata', 'Pons'],
@@ -324,7 +324,7 @@ const mcqSet1Questions: TestQuestion[] = [
   category: 'MCQ Set 1 A&P_RRB',
   difficulty: 'Moderate'
 },
-  {
+{
   id: '11',
   question: 'Which part of the brain regulates body temperature, hunger, and thirst?',
   options: ['Cerebrum', 'Cerebellum', 'Hypothalamus', 'Medulla oblongata'],
@@ -402,7 +402,16 @@ const mcqSet1Questions: TestQuestion[] = [
   options: ['Liver', 'Pancreas', 'Thyroid', 'Salivary gland'],
   correctAnswer: 0,
   explanation: 'The liver is the largest gland and performs vital metabolic, detoxifying, and synthetic functions including bile secretion. Hence, option a is correct.',
+ }
 ];
+
+// Replace placeholder questions with real ones for Grand Test 1
+if (testQuestionsByCategory['mcq-1']) {
+  testQuestionsByCategory['mcq-1'] = mcqSet1Questions;
+}
+];
+
+
 testQuestionsByCategory['mcq-1'] = mcqSet1Questions;
 
 // Get all test questions as a flat array

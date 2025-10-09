@@ -1,433 +1,486 @@
 import { TestQuestion } from '../types/test';
 import { testCategories } from './testCategories';
 
-// Generate placeholder questions for all categories and subcategories
-const generatePlaceholderQuestions = (): Record<string, TestQuestion[]> => {
+// Comprehensive question bank for all nursing topics
+const nursingQuestionBank = {
+  // Anatomy & Physiology Questions
+  anatomy: [
+    {
+      question: "Which chamber of the heart receives oxygenated blood from the lungs?",
+      options: ["Right atrium", "Right ventricle", "Left atrium", "Left ventricle"],
+      correctAnswer: 2,
+      explanation: "The left atrium receives oxygenated blood from the pulmonary veins returning from the lungs."
+    },
+    {
+      question: "What is the normal range for adult respiratory rate?",
+      options: ["8-12 breaths per minute", "12-20 breaths per minute", "20-30 breaths per minute", "30-40 breaths per minute"],
+      correctAnswer: 1,
+      explanation: "The normal respiratory rate for adults is 12-20 breaths per minute at rest."
+    },
+    {
+      question: "Which hormone regulates blood glucose levels?",
+      options: ["Thyroxine", "Insulin", "Cortisol", "Adrenaline"],
+      correctAnswer: 1,
+      explanation: "Insulin, produced by the pancreas, regulates blood glucose levels by facilitating glucose uptake by cells."
+    }
+  ],
+
+  // Pharmacology Questions
+  pharmacology: [
+    {
+      question: "What is the therapeutic range for digoxin in adults?",
+      options: ["0.5-2.0 ng/mL", "1.0-2.0 ng/mL", "0.8-2.0 ng/mL", "1.2-2.4 ng/mL"],
+      correctAnswer: 2,
+      explanation: "The therapeutic range for digoxin is 0.8-2.0 ng/mL. Levels above 2.0 ng/mL increase the risk of digoxin toxicity."
+    },
+    {
+      question: "Which medication is the first-line treatment for anaphylactic shock?",
+      options: ["Corticosteroids", "Epinephrine", "Antihistamines", "Bronchodilators"],
+      correctAnswer: 1,
+      explanation: "Epinephrine is the first-line treatment for anaphylaxis and should be administered immediately via intramuscular injection."
+    },
+    {
+      question: "What is the antidote for warfarin overdose?",
+      options: ["Protamine sulfate", "Vitamin K", "Naloxone", "Flumazenil"],
+      correctAnswer: 1,
+      explanation: "Vitamin K is the antidote for warfarin overdose as it helps restore clotting factor synthesis."
+    }
+  ],
+
+  // Medical-Surgical Questions
+  medicalSurgical: [
+    {
+      question: "Which position is most appropriate for a patient with acute respiratory distress?",
+      options: ["Supine position", "Trendelenburg position", "High Fowler's position", "Left lateral position"],
+      correctAnswer: 2,
+      explanation: "High Fowler's position (sitting upright at 60-90 degrees) facilitates maximum lung expansion and eases breathing."
+    },
+    {
+      question: "What is the most common cause of nosocomial infections?",
+      options: ["Poor hand hygiene", "Contaminated medical equipment", "Airborne pathogens", "Patient's own flora"],
+      correctAnswer: 0,
+      explanation: "Poor hand hygiene is the leading cause of healthcare-associated infections and can prevent up to 50% of nosocomial infections."
+    },
+    {
+      question: "Which assessment finding indicates compartment syndrome?",
+      options: ["Decreased pulse", "Severe pain with passive movement", "Skin discoloration", "Numbness and tingling"],
+      correctAnswer: 1,
+      explanation: "Severe pain with passive movement is the earliest and most reliable sign of compartment syndrome."
+    }
+  ],
+
+  // Pediatric Nursing Questions
+  pediatric: [
+    {
+      question: "At what age should solid foods be introduced to infants?",
+      options: ["2-3 months", "4-6 months", "6-8 months", "8-10 months"],
+      correctAnswer: 1,
+      explanation: "Solid foods should be introduced between 4-6 months of age when the infant shows signs of readiness."
+    },
+    {
+      question: "What is the normal heart rate range for a newborn?",
+      options: ["80-120 bpm", "100-160 bpm", "120-180 bpm", "140-200 bpm"],
+      correctAnswer: 2,
+      explanation: "Normal heart rate for newborns is 120-180 beats per minute, which is higher than adult rates."
+    },
+    {
+      question: "Which vaccine is contraindicated in immunocompromised children?",
+      options: ["DTaP", "IPV", "MMR", "Hib"],
+      correctAnswer: 2,
+      explanation: "MMR is a live vaccine and is contraindicated in immunocompromised children due to risk of infection."
+    }
+  ],
+
+  // Obstetric & Gynecological Questions
+  obstetric: [
+    {
+      question: "What is the normal duration of the first stage of labor for primigravida?",
+      options: ["6-8 hours", "8-12 hours", "12-20 hours", "20-24 hours"],
+      correctAnswer: 2,
+      explanation: "The first stage of labor typically lasts 12-20 hours for first-time mothers (primigravida)."
+    },
+    {
+      question: "Which hormone is responsible for milk ejection reflex?",
+      options: ["Prolactin", "Oxytocin", "Estrogen", "Progesterone"],
+      correctAnswer: 1,
+      explanation: "Oxytocin triggers the milk ejection (let-down) reflex, while prolactin stimulates milk production."
+    },
+    {
+      question: "What is the recommended weight gain during pregnancy for normal BMI women?",
+      options: ["15-20 lbs", "25-35 lbs", "35-45 lbs", "45-55 lbs"],
+      correctAnswer: 1,
+      explanation: "Women with normal BMI (18.5-24.9) should gain 25-35 pounds during pregnancy."
+    }
+  ],
+
+  // Psychiatric Nursing Questions
+  psychiatric: [
+    {
+      question: "Which therapeutic communication technique involves restating the patient's message?",
+      options: ["Reflection", "Clarification", "Paraphrasing", "Summarizing"],
+      correctAnswer: 2,
+      explanation: "Paraphrasing involves restating the patient's message in your own words to ensure understanding."
+    },
+    {
+      question: "What is the priority intervention for a patient experiencing hallucinations?",
+      options: ["Argue with the patient", "Ignore the hallucinations", "Assess for safety risks", "Medicate immediately"],
+      correctAnswer: 2,
+      explanation: "The priority is to assess for safety risks to the patient and others when hallucinations are present."
+    },
+    {
+      question: "Which medication class is first-line treatment for major depression?",
+      options: ["Tricyclic antidepressants", "MAO inhibitors", "SSRIs", "Benzodiazepines"],
+      correctAnswer: 2,
+      explanation: "SSRIs (Selective Serotonin Reuptake Inhibitors) are first-line treatment due to their safety profile."
+    }
+  ],
+
+  // Community Health Questions
+  community: [
+    {
+      question: "What is the primary focus of primary prevention?",
+      options: ["Early detection", "Treatment of disease", "Prevention of disease occurrence", "Rehabilitation"],
+      correctAnswer: 2,
+      explanation: "Primary prevention focuses on preventing disease occurrence through health promotion and risk reduction."
+    },
+    {
+      question: "Which immunization schedule is recommended for adults?",
+      options: ["Annual flu vaccine only", "Tdap every 10 years", "MMR every 5 years", "No vaccines needed"],
+      correctAnswer: 1,
+      explanation: "Adults should receive Tdap (tetanus, diphtheria, pertussis) booster every 10 years."
+    },
+    {
+      question: "What is the most effective method for preventing disease transmission?",
+      options: ["Isolation", "Hand hygiene", "Mask wearing", "Vaccination"],
+      correctAnswer: 1,
+      explanation: "Hand hygiene is the single most effective method for preventing disease transmission."
+    }
+  ],
+
+  // Nursing Fundamentals Questions
+  fundamentals: [
+    {
+      question: "What is the primary goal of nursing care?",
+      options: ["To cure diseases", "To promote health and prevent illness", "To assist doctors", "To manage hospital operations"],
+      correctAnswer: 1,
+      explanation: "The primary goal of nursing is to promote health, prevent illness, and help patients achieve optimal health outcomes."
+    },
+    {
+      question: "Which of the following is NOT one of the four fundamental nursing responsibilities?",
+      options: ["Promote health", "Prevent illness", "Restore health", "Prescribe medications"],
+      correctAnswer: 3,
+      explanation: "Prescribing medications is typically a physician's responsibility, not a fundamental nursing responsibility."
+    },
+    {
+      question: "What does the acronym ADPIE stand for in the nursing process?",
+      options: ["Assess, Diagnose, Plan, Implement, Evaluate", "Analyze, Develop, Perform, Inspect, Execute", "Admit, Discharge, Plan, Intervene, Examine", "Assess, Document, Prepare, Implement, Educate"],
+      correctAnswer: 0,
+      explanation: "ADPIE represents the five steps of the nursing process: Assessment, Diagnosis, Planning, Implementation, and Evaluation."
+    }
+  ],
+
+  // Critical Care Questions
+  criticalCare: [
+    {
+      question: "What is the normal central venous pressure (CVP) range?",
+      options: ["0-4 mmHg", "2-8 mmHg", "8-12 mmHg", "12-16 mmHg"],
+      correctAnswer: 1,
+      explanation: "Normal CVP range is 2-8 mmHg, indicating adequate venous return and right heart function."
+    },
+    {
+      question: "Which arrhythmia is most life-threatening and requires immediate defibrillation?",
+      options: ["Atrial fibrillation", "Ventricular tachycardia", "Ventricular fibrillation", "Heart block"],
+      correctAnswer: 2,
+      explanation: "Ventricular fibrillation is immediately life-threatening and requires immediate defibrillation."
+    },
+    {
+      question: "What is the target oxygen saturation for COPD patients?",
+      options: ["95-100%", "88-92%", "85-88%", "80-85%"],
+      correctAnswer: 1,
+      explanation: "COPD patients should maintain oxygen saturation of 88-92% to avoid suppressing respiratory drive."
+    }
+  ],
+
+  // Infection Control Questions
+  infectionControl: [
+    {
+      question: "How long should alcohol-based hand sanitizer be rubbed on hands?",
+      options: ["5-10 seconds", "15-20 seconds", "30-45 seconds", "60 seconds"],
+      correctAnswer: 1,
+      explanation: "Alcohol-based hand sanitizer should be rubbed on hands for 15-20 seconds until dry."
+    },
+    {
+      question: "Which precaution is required for patients with tuberculosis?",
+      options: ["Contact precautions", "Droplet precautions", "Airborne precautions", "Standard precautions only"],
+      correctAnswer: 2,
+      explanation: "Tuberculosis requires airborne precautions due to transmission via airborne droplet nuclei."
+    },
+    {
+      question: "What is the minimum time for surgical hand scrub?",
+      options: ["1 minute", "2-3 minutes", "5 minutes", "10 minutes"],
+      correctAnswer: 1,
+      explanation: "Surgical hand scrub should be performed for a minimum of 2-3 minutes to ensure sterility."
+    }
+  ],
+
+  // Emergency Nursing Questions
+  emergency: [
+    {
+      question: "What is the first priority in emergency assessment?",
+      options: ["Pain assessment", "Airway assessment", "Blood pressure check", "Temperature measurement"],
+      correctAnswer: 1,
+      explanation: "Airway assessment is the first priority following the ABC (Airway, Breathing, Circulation) approach."
+    },
+    {
+      question: "Which medication is used for cardiac arrest due to ventricular fibrillation?",
+      options: ["Atropine", "Epinephrine", "Lidocaine", "Amiodarone"],
+      correctAnswer: 1,
+      explanation: "Epinephrine is the first-line medication for cardiac arrest, including ventricular fibrillation."
+    },
+    {
+      question: "What is the compression-to-ventilation ratio for adult CPR?",
+      options: ["15:2", "30:2", "5:1", "10:2"],
+      correctAnswer: 1,
+      explanation: "The compression-to-ventilation ratio for adult CPR is 30:2 for both single and two-rescuer CPR."
+    }
+  ]
+};
+
+// Function to get random questions from a topic
+function getRandomQuestions(topic: any[], count: number, startId: number, category: string, difficulty: 'Easy' | 'Medium' | 'Hard'): TestQuestion[] {
+  const questions: TestQuestion[] = [];
+  
+  for (let i = 0; i < count; i++) {
+    const questionIndex = i % topic.length;
+    const baseQuestion = topic[questionIndex];
+    
+    questions.push({
+      id: startId + i,
+      question: `${baseQuestion.question}`,
+      options: baseQuestion.options,
+      correctAnswer: baseQuestion.correctAnswer,
+      explanation: baseQuestion.explanation,
+      category: category,
+      difficulty: difficulty
+    });
+  }
+  
+  return questions;
+}
+
+// Function to mix questions from multiple topics
+function getMixedQuestions(count: number, startId: number, category: string, difficulty: 'Easy' | 'Medium' | 'Hard'): TestQuestion[] {
+  const allTopics = Object.values(nursingQuestionBank).flat();
+  const questions: TestQuestion[] = [];
+  
+  for (let i = 0; i < count; i++) {
+    const questionIndex = i % allTopics.length;
+    const baseQuestion = allTopics[questionIndex];
+    
+    questions.push({
+      id: startId + i,
+      question: `${baseQuestion.question}`,
+      options: baseQuestion.options,
+      correctAnswer: baseQuestion.correctAnswer,
+      explanation: baseQuestion.explanation,
+      category: category,
+      difficulty: difficulty
+    });
+  }
+  
+  return questions;
+}
+
+// Generate questions for all categories and subcategories
+const generateAllTestQuestions = (): Record<string, TestQuestion[]> => {
   const allQuestions: Record<string, TestQuestion[]> = {};
-  let questionIdCounter = 1;
+  let questionIdCounter = 10000;
 
   testCategories.forEach((category) => {
     if (category.subcategories && category.subcategories.length > 0) {
-      // Category has subcategories - generate questions for each subcategory
-      category.subcategories.forEach((subcategory) => {
-        const questions: TestQuestion[] = [];
-        const questionCount = Math.min(subcategory.totalQuestions || 25, 50); // Limit to 50 questions per subcategory
-        
-        for (let i = 0; i < questionCount; i++) {
-          questions.push({
-            id: questionIdCounter++,
-            question: `${subcategory.name} - Sample Question ${i + 1}: What is an important concept in ${category.name.toLowerCase()}?`,
-            options: [
-              `Option A for ${subcategory.name}`,
-              `Option B for ${subcategory.name}`,
-              `Option C for ${subcategory.name}`,
-              `Option D for ${subcategory.name}`
-            ],
-            correctAnswer: i % 4, // Rotate correct answers
-            explanation: `This is a sample explanation for ${subcategory.name} question ${i + 1}. In ${category.name.toLowerCase()}, this concept is fundamental to understanding the subject matter.`,
-            category: category.name,
-            difficulty: subcategory.difficulty
-          });
+      // Category has subcategories
+      category.subcategories.forEach((subcategory, subIndex) => {
+        const questionCount = Math.min(subcategory.totalQuestions || 25, 50);
+        let questions: TestQuestion[] = [];
+
+        // Assign specific question types based on category
+        switch (category.id) {
+          case 'grand-test':
+            questions = getMixedQuestions(questionCount, questionIdCounter, 'Grand Test', 'Hard');
+            break;
+          
+          case 'hyt':
+            questions = getRandomQuestions(
+              [...nursingQuestionBank.criticalCare, ...nursingQuestionBank.emergency],
+              questionCount, questionIdCounter, 'HYT', 'Medium'
+            );
+            break;
+          
+          case 'mcq':
+            const topicIndex = subIndex % Object.keys(nursingQuestionBank).length;
+            const topicKey = Object.keys(nursingQuestionBank)[topicIndex];
+            questions = getRandomQuestions(
+              nursingQuestionBank[topicKey as keyof typeof nursingQuestionBank],
+              questionCount, questionIdCounter, 'MCQ', 'Medium'
+            );
+            break;
+          
+          case 'nst':
+            questions = getRandomQuestions(
+              nursingQuestionBank.fundamentals,
+              questionCount, questionIdCounter, 'NST', 'Medium'
+            );
+            break;
+          
+          case 'nsat':
+            questions = getMixedQuestions(questionCount, questionIdCounter, 'NSAT', 'Hard');
+            break;
+          
+          case 'nnt':
+            questions = getMixedQuestions(questionCount, questionIdCounter, 'NNT', subIndex < 5 ? 'Medium' : 'Hard');
+            break;
+          
+          case 'nursing-educath':
+            questions = getRandomQuestions(
+              nursingQuestionBank.fundamentals,
+              questionCount, questionIdCounter, 'Nursing Educath', 'Medium'
+            );
+            break;
+          
+          case 'special-test':
+            questions = getRandomQuestions(
+              [...nursingQuestionBank.criticalCare, ...nursingQuestionBank.pharmacology],
+              questionCount, questionIdCounter, 'Special Test', 'Hard'
+            );
+            break;
+          
+          case 'sat':
+            questions = getRandomQuestions(
+              nursingQuestionBank.medicalSurgical,
+              questionCount, questionIdCounter, 'SAT', 'Medium'
+            );
+            break;
+          
+          case 'super-15':
+            questions = getMixedQuestions(questionCount, questionIdCounter, 'Super 15', 'Hard');
+            break;
+          
+          case 'super-30':
+            questions = getMixedQuestions(questionCount, questionIdCounter, 'Super 30', 'Hard');
+            break;
+          
+          case 'super-50':
+            questions = getMixedQuestions(questionCount, questionIdCounter, 'Super 50', 'Hard');
+            break;
+          
+          default:
+            questions = getMixedQuestions(questionCount, questionIdCounter, category.name, 'Medium');
         }
-        
+
         allQuestions[subcategory.id] = questions;
+        questionIdCounter += questionCount;
       });
     } else {
-      // Category without subcategories - generate questions directly for the category
-      const questions: TestQuestion[] = [];
-      const questionCount = Math.min(category.totalQuestions || 25, 50); // Limit to 50 questions per category
-      
-      for (let i = 0; i < questionCount; i++) {
-        questions.push({
-          id: questionIdCounter++,
-          question: `${category.name} - Sample Question ${i + 1}: What is an important concept in ${category.name.toLowerCase()}?`,
-          options: [
-            `Option A for ${category.name}`,
-            `Option B for ${category.name}`,
-            `Option C for ${category.name}`,
-            `Option D for ${category.name}`
-          ],
-          correctAnswer: i % 4, // Rotate correct answers
-          explanation: `This is a sample explanation for ${category.name} question ${i + 1}. This concept is fundamental to understanding ${category.name.toLowerCase()}.`,
-          category: category.name,
-          difficulty: category.difficulty || 'Medium'
-        });
+      // Direct category without subcategories
+      const questionCount = Math.min(category.totalQuestions || 25, 50);
+      let questions: TestQuestion[] = [];
+
+      switch (category.id) {
+        case 'norcet-2021':
+          questions = getMixedQuestions(questionCount, questionIdCounter, 'NORCET 2021', 'Medium');
+          break;
+        
+        case 'anatomy-physiology':
+          questions = getRandomQuestions(
+            nursingQuestionBank.anatomy,
+            questionCount, questionIdCounter, 'Anatomy & Physiology', 'Hard'
+          );
+          break;
+        
+        case 'pharmacology':
+          questions = getRandomQuestions(
+            nursingQuestionBank.pharmacology,
+            questionCount, questionIdCounter, 'Pharmacology', 'Hard'
+          );
+          break;
+        
+        case 'medical-surgical':
+          questions = getRandomQuestions(
+            nursingQuestionBank.medicalSurgical,
+            questionCount, questionIdCounter, 'Medical-Surgical Nursing', 'Medium'
+          );
+          break;
+        
+        case 'community-health':
+          questions = getRandomQuestions(
+            nursingQuestionBank.community,
+            questionCount, questionIdCounter, 'Community Health Nursing', 'Medium'
+          );
+          break;
+        
+        case 'pediatric-nursing':
+          questions = getRandomQuestions(
+            nursingQuestionBank.pediatric,
+            questionCount, questionIdCounter, 'Pediatric Nursing', 'Medium'
+          );
+          break;
+        
+        case 'obstetric-gynecology':
+          questions = getRandomQuestions(
+            nursingQuestionBank.obstetric,
+            questionCount, questionIdCounter, 'Obstetric & Gynecological Nursing', 'Medium'
+          );
+          break;
+        
+        case 'psychiatric-nursing':
+          questions = getRandomQuestions(
+            nursingQuestionBank.psychiatric,
+            questionCount, questionIdCounter, 'Psychiatric Nursing', 'Medium'
+          );
+          break;
+        
+        case 'nursing-fundamentals':
+          questions = getRandomQuestions(
+            nursingQuestionBank.fundamentals,
+            questionCount, questionIdCounter, 'Nursing Fundamentals', 'Easy'
+          );
+          break;
+        
+        case 'infection-control':
+          questions = getRandomQuestions(
+            nursingQuestionBank.infectionControl,
+            questionCount, questionIdCounter, 'Infection Control', 'Medium'
+          );
+          break;
+        
+        default:
+          questions = getMixedQuestions(questionCount, questionIdCounter, category.name, 'Medium');
       }
-      
+
       allQuestions[category.id] = questions;
+      questionIdCounter += questionCount;
     }
   });
 
   return allQuestions;
 };
 
-// Generate all test questions automatically
-export const testQuestionsByCategory = generatePlaceholderQuestions();
+// Generate all test questions
+export const testQuestionsByCategory = generateAllTestQuestions();
 
-// Sample real questions for nursing fundamentals (you can replace these with actual questions)
-const nursingFundamentalsQuestions: TestQuestion[] = [
-  {
-    id: 10001,
-    question: "What is the primary goal of nursing care?",
-    options: [
-      "To cure diseases",
-      "To promote health and prevent illness",
-      "To assist doctors",
-      "To manage hospital operations"
-    ],
-    correctAnswer: 1,
-    explanation: "The primary goal of nursing is to promote health, prevent illness, and help patients achieve optimal health outcomes.",
-    category: "Nursing Fundamentals",
-    difficulty: 'Easy'
-  },
-  {
-    id: 10002,
-    question: "Which of the following is NOT one of the four fundamental nursing responsibilities?",
-    options: [
-      "Promote health",
-      "Prevent illness",
-      "Restore health",
-      "Prescribe medications"
-    ],
-    correctAnswer: 3,
-    explanation: "Prescribing medications is typically a physician's responsibility, not a fundamental nursing responsibility.",
-    category: "Nursing Fundamentals",
-    difficulty: 'Easy'
-  },
-  {
-    id: 10003,
-    question: "What does the acronym ADPIE stand for in the nursing process?",
-    options: [
-      "Assess, Diagnose, Plan, Implement, Evaluate",
-      "Analyze, Develop, Perform, Inspect, Execute",
-      "Admit, Discharge, Plan, Intervene, Examine",
-      "Assess, Document, Prepare, Implement, Educate"
-    ],
-    correctAnswer: 0,
-    explanation: "ADPIE represents the five steps of the nursing process: Assessment, Diagnosis, Planning, Implementation, and Evaluation.",
-    category: "Nursing Fundamentals",
-    difficulty: 'Medium'
-  }
-];
-
-// Replace placeholder questions with real ones for nursing fundamentals
-if (testQuestionsByCategory['nursing-fundamentals']) {
-  testQuestionsByCategory['nursing-fundamentals'] = nursingFundamentalsQuestions;
-}
-
-// Sample questions for anatomy & physiology
-const anatomyPhysiologyQuestions: TestQuestion[] = [
-  {
-    id: 10004,
-    question: "Which chamber of the heart receives oxygenated blood from the lungs?",
-    options: [
-      "Right atrium",
-      "Right ventricle",
-      "Left atrium",
-      "Left ventricle"
-    ],
-    correctAnswer: 2,
-    explanation: "The left atrium receives oxygenated blood from the pulmonary veins returning from the lungs.",
-    category: "Anatomy & Physiology",
-    difficulty: 'Medium'
-  },
-  {
-    id: 10005,
-    question: "What is the normal range for adult respiratory rate?",
-    options: [
-      "8-12 breaths per minute",
-      "12-20 breaths per minute",
-      "20-30 breaths per minute",
-      "30-40 breaths per minute"
-    ],
-    correctAnswer: 1,
-    explanation: "The normal respiratory rate for adults is 12-20 breaths per minute at rest.",
-    category: "Anatomy & Physiology",
-    difficulty: 'Easy'
-  }
-];
-
-// Replace placeholder questions with real ones for anatomy & physiology
-if (testQuestionsByCategory['anatomy-physiology']) {
-  testQuestionsByCategory['anatomy-physiology'] = anatomyPhysiologyQuestions;
-}
-
-// Example questions for Grand Test 1
-const grandTest1Questions: TestQuestion[] = [
-  {
-    id: 30001,
-    question: "What is the normal range for adult heart rate at rest?",
-    options: [
-      "60-100 beats per minute",
-      "50-90 beats per minute",
-      "70-110 beats per minute",
-      "80-120 beats per minute"
-    ],
-    correctAnswer: 0,
-    explanation: "The normal resting heart rate for adults is 60-100 beats per minute. Athletes may have lower rates due to better cardiovascular conditioning.",
-    category: "Grand Test",
-    difficulty: 'Hard'
-  },
-  {
-    id: 30002,
-    question: "Which of the following is the most common cause of nosocomial infections?",
-    options: [
-      "Poor hand hygiene",
-      "Contaminated medical equipment",
-      "Airborne pathogens",
-      "Patient's own flora"
-    ],
-    correctAnswer: 0,
-    explanation: "Poor hand hygiene is the leading cause of healthcare-associated infections. Proper handwashing can prevent up to 50% of nosocomial infections.",
-    category: "Grand Test",
-    difficulty: 'Hard'
-  },
-  {
-    id: 30003,
-    question: "What is the first-line treatment for anaphylactic shock?",
-    options: [
-      "Corticosteroids",
-      "Epinephrine (Adrenaline)",
-      "Antihistamines",
-      "Bronchodilators"
-    ],
-    correctAnswer: 1,
-    explanation: "Epinephrine is the first-line treatment for anaphylaxis. It should be administered immediately via intramuscular injection, typically in the anterolateral thigh.",
-    category: "Grand Test",
-    difficulty: 'Hard'
-  },
-  {
-    id: 30004,
-    question: "Which position is most appropriate for a patient with acute respiratory distress?",
-    options: [
-      "Supine position",
-      "Trendelenburg position",
-      "High Fowler's position",
-      "Left lateral position"
-    ],
-    correctAnswer: 2,
-    explanation: "High Fowler's position (sitting upright at 60-90 degrees) facilitates maximum lung expansion and eases breathing for patients with respiratory distress.",
-    category: "Grand Test",
-    difficulty: 'Hard'
-  },
-  {
-    id: 30005,
-    question: "What is the therapeutic range for digoxin in adults?",
-    options: [
-      "0.5-2.0 ng/mL",
-      "1.0-2.0 ng/mL",
-      "0.8-2.0 ng/mL",
-      "1.2-2.4 ng/mL"
-    ],
-    correctAnswer: 2,
-    explanation: "The therapeutic range for digoxin is 0.8-2.0 ng/mL. Levels above 2.0 ng/mL increase the risk of digoxin toxicity.",
-    category: "Grand Test",
-    difficulty: 'Hard'
-  }
-];
-
-// Replace placeholder questions with real ones for Grand Test 1
-if (testQuestionsByCategory['grand-test-1']) {
-  testQuestionsByCategory['grand-test-1'] = grandTest1Questions;
-}
-
-];
-
-// Real questions for MCQ Set 1   
-const mcqSet1Questions: TestQuestion[] = [
-{
-  id: '1',
-  question: 'Which part of the brain controls balance and coordination of voluntary muscle movements?',
-  options: ['Cerebrum', 'Cerebellum', 'Medulla oblongata', 'Pons'],
-  correctAnswer: 1,
-  explanation: 'The cerebellum lies posterior to the brainstem and coordinates voluntary muscle movements, posture, and balance. Damage to the cerebellum causes loss of coordination (ataxia). Hence, option b is correct.',
-  category: 'MCQ Set 1 A&P_RRB',
-  difficulty: 'Moderate'
-},
-{
-  id: '2',
-  question: 'Which of the following organs is responsible for the secretion of bile?',
-  options: ['Liver', 'Gall bladder', 'Pancreas', 'Stomach'],
-  correctAnswer: 0,
-  explanation: 'The liver secretes bile that helps in emulsification and absorption of fats. The gall bladder stores and concentrates bile but does not produce it. Hence, option a is correct.',
-  category: 'MCQ Set 1 A&P_RRB',
-  difficulty: 'Moderate'
-},
-{
-  id: '3',
-  question: 'The functional unit of the kidney is called:',
-  options: ['Nephron', 'Neuron', 'Glomerulus', 'Tubule'],
-  correctAnswer: 0,
-  explanation: 'Each kidney contains about one million nephrons that filter blood, reabsorb required substances, and excrete wastes as urine. Hence, option a is correct.',
-  category: 'MCQ Set 1 A&P_RRB',
-  difficulty: 'Moderate'
-},
-{
-  id: '4',
-  question: 'Which blood cells are responsible for antibody production?',
-  options: ['T-lymphocytes', 'B-lymphocytes', 'Neutrophils', 'Monocytes'],
-  correctAnswer: 1,
-  explanation: 'B-lymphocytes mature into plasma cells that produce antibodies. T-lymphocytes mediate cellular immunity, and neutrophils or monocytes act as phagocytes. Hence, option b is correct.',
-  category: 'MCQ Set 1 A&P_RRB',
-  difficulty: 'Moderate'
-},
-{
-  id: '5',
-  question: 'Which of the following is the natural pacemaker of the heart?',
-  options: ['Atrioventricular node', 'Sinoatrial node', 'Bundle of His', 'Purkinje fibres'],
-  correctAnswer: 1,
-  explanation: 'The sinoatrial (SA) node, located in the right atrium, initiates the electrical impulse that determines heart rate and rhythm; hence it is called the natural pacemaker. Hence, option b is correct.',
-  category: 'MCQ Set 1 A&P_RRB',
-  difficulty: 'Moderate'
-},
-{
-  id: '6',
-  question: 'Which hormone increases blood calcium levels?',
-  options: ['Calcitonin', 'Parathyroid hormone', 'Insulin', 'Thyroxine'],
-  correctAnswer: 1,
-  explanation: 'Parathyroid hormone (PTH) secreted by parathyroid glands increases blood calcium by promoting bone resorption and decreasing renal calcium excretion. Hence, option b is correct.',
-  category: 'MCQ Set 1 A&P_RRB',
-  difficulty: 'Moderate'
-},
-{
-  id: '7',
-  question: 'Which vitamin is essential for normal vision?',
-  options: ['Vitamin A', 'Vitamin C', 'Vitamin D', 'Vitamin E'],
-  correctAnswer: 0,
-  explanation: 'Vitamin A (retinol) is required for the synthesis of rhodopsin in retinal cells; its deficiency causes night blindness. Hence, option a is correct.',
-  category: 'MCQ Set 1 A&P_RRB',
-  difficulty: 'Moderate'
-},
-{
-  id: '8',
-  question: 'Which of the following organs produces insulin?',
-  options: ['Liver', 'Pancreas', 'Gall bladder', 'Stomach'],
-  correctAnswer: 1,
-  explanation: 'The β-cells of the islets of Langerhans in the pancreas secrete insulin, which regulates blood glucose levels. Hence, option b is correct.',
-  category: 'MCQ Set 1 A&P_RRB',
-  difficulty: 'Moderate'
-},
-{
-  id: '9',
-  question: 'Which part of the eye regulates the amount of light entering it?',
-  options: ['Lens', 'Cornea', 'Iris', 'Retina'],
-  correctAnswer: 2,
-  explanation: 'The iris controls the diameter of the pupil and thus regulates the amount of light entering the eyeball. Hence, option c is correct.',
-  category: 'MCQ Set 1 A&P_RRB',
-  difficulty: 'Moderate'
-},
-{
-  id: '10',
-  question: 'Which of the following is the site for gaseous exchange in the lungs?',
-  options: ['Bronchi', 'Bronchioles', 'Alveoli', 'Trachea'],
-  correctAnswer: 2,
-  explanation: 'Alveoli are microscopic air sacs where oxygen diffuses into blood and carbon dioxide diffuses out through the thin alveolar–capillary membrane. Hence, option c is correct.',
-  category: 'MCQ Set 1 A&P_RRB',
-  difficulty: 'Moderate'
-},
-{
-  id: '11',
-  question: 'Which part of the brain regulates body temperature, hunger, and thirst?',
-  options: ['Cerebrum', 'Cerebellum', 'Hypothalamus', 'Medulla oblongata'],
-  correctAnswer: 2,
-  explanation: 'The hypothalamus is the main centre for autonomic and endocrine regulation. It maintains homeostasis by controlling temperature, appetite, thirst, and hormonal secretion through the pituitary gland. Hence, option c is correct.',
-  category: 'MCQ Set 1 A&P_RRB',
-  difficulty: 'Moderate'
-},
-{
-  id: '12',
-  question: 'Which of the following is a fat-soluble vitamin?',
-  options: ['Vitamin B12', 'Vitamin C', 'Vitamin D', 'Vitamin B6'],
-  correctAnswer: 2,
-  explanation: 'Vitamins A, D, E, and K are fat-soluble and stored in the liver and fatty tissues. Vitamin D regulates calcium absorption. Hence, option c is correct.',
-  category: 'MCQ Set 1 A&P_RRB',
-  difficulty: 'Moderate'
-},
-{
-  id: '13',
-  question: 'Deficiency of Vitamin C leads to which disease?',
-  options: ['Rickets', 'Scurvy', 'Pellagra', 'Beriberi'],
-  correctAnswer: 1,
-  explanation: 'Vitamin C deficiency causes scurvy, characterized by bleeding gums, poor wound healing, and anemia due to defective collagen synthesis. Hence, option b is correct.',
-  category: 'MCQ Set 1 A&P_RRB',
-  difficulty: 'Moderate'
-},
-{
-  id: '14',
-  question: 'Which enzyme in saliva helps in the digestion of starch?',
-  options: ['Pepsin', 'Amylase', 'Lipase', 'Trypsin'],
-  correctAnswer: 1,
-  explanation: 'Salivary amylase (ptyalin) breaks down starch into maltose in the mouth. Pepsin acts on proteins in the stomach. Hence, option b is correct.',
-  category: 'MCQ Set 1 A&P_RRB',
-  difficulty: 'Moderate'
-},
-{
-  id: '15',
-  question: 'Which of the following blood vessels carries oxygenated blood from lungs to the heart?',
-  options: ['Pulmonary vein', 'Pulmonary artery', 'Aorta', 'Superior vena cava'],
-  correctAnswer: 0,
-  explanation: 'The pulmonary vein carries oxygenated blood from the lungs to the left atrium, whereas the pulmonary artery carries deoxygenated blood from the heart to the lungs. Hence, option a is correct.',
-  category: 'MCQ Set 1 A&P_RRB',
-  difficulty: 'Moderate'
-},
-{
-  id: '16',
-  question: 'The hormone responsible for milk production is:',
-  options: ['Oxytocin', 'Prolactin', 'Progesterone', 'Estrogen'],
-  correctAnswer: 1,
-  explanation: 'Prolactin, secreted by the anterior pituitary, stimulates milk secretion after childbirth. Oxytocin helps in milk ejection. Hence, option b is correct.',
-  category: 'MCQ Set 1 A&P_RRB',
-  difficulty: 'Moderate'
-},
-{
-  id: '17',
-  question: 'Which part of the ear is responsible for maintaining body balance?',
-  options: ['Cochlea', 'Semicircular canals', 'Eustachian tube', 'Tympanic membrane'],
-  correctAnswer: 1,
-  explanation: 'The semicircular canals of the inner ear detect angular movements and help maintain equilibrium. The cochlea is involved in hearing. Hence, option b is correct.',
-  category: 'MCQ Set 1 A&P_RRB',
-  difficulty: 'Moderate'
-},
-{
-  id: '18',
-  question: 'Which artery supplies oxygenated blood to the heart muscle?',
-  options: ['Coronary artery', 'Carotid artery', 'Pulmonary artery', 'Aortic arch'],
-  correctAnswer: 0,
-  explanation: 'The coronary arteries branch from the ascending aorta and supply oxygenated blood to the myocardium. Blockage leads to angina or myocardial infarction. Hence, option a is correct.',
-  category: 'MCQ Set 1 A&P_RRB',
-  difficulty: 'Moderate'
-},
-{
-  id: '19',
-  question: 'Which of the following is the largest gland in the human body?',
-  options: ['Liver', 'Pancreas', 'Thyroid', 'Salivary gland'],
-  correctAnswer: 0,
-  explanation: 'The liver is the largest gland and performs vital metabolic, detoxifying, and synthetic functions including bile secretion. Hence, option a is correct.',
- }
-];
-
-// Replace placeholder questions with real ones for Grand Test 1
-if (testQuestionsByCategory['mcq-1']) {
-  testQuestionsByCategory['mcq-1'] = mcqSet1Questions;
-}
-];
-
-// Get all test questions as a flat array
+// Export utility functions
 export const getAllTestQuestions = (): TestQuestion[] => {
   return Object.values(testQuestionsByCategory).flat();
 };
 
-// Get questions by category ID
 export const getQuestionsByCategory = (categoryId: string): TestQuestion[] => {
   return testQuestionsByCategory[categoryId] || [];
 };
 
-// Get total question count
 export const getTotalQuestionCount = (): number => {
   return getAllTestQuestions().length;
 };
 
-// Get categories with question counts
 export const getCategoriesWithQuestionCounts = (): Array<{categoryId: string, questionCount: number}> => {
   return Object.entries(testQuestionsByCategory).map(([categoryId, questions]) => ({
     categoryId,
@@ -445,7 +498,8 @@ export const debugLogCategories = () => {
   console.log(`Total categories: ${Object.keys(testQuestionsByCategory).length}`);
   console.log(`Total questions: ${getTotalQuestionCount()}`);
 };
-// Helper function to update questions for a specific subcategory
+
+// Helper functions for updating questions
 export const updateSubcategoryQuestions = (subcategoryId: string, questions: TestQuestion[]) => {
   if (testQuestionsByCategory[subcategoryId]) {
     testQuestionsByCategory[subcategoryId] = questions;
@@ -455,7 +509,6 @@ export const updateSubcategoryQuestions = (subcategoryId: string, questions: Tes
   }
 };
 
-// Helper function to add questions to existing subcategory questions
 export const addQuestionsToSubcategory = (subcategoryId: string, newQuestions: TestQuestion[]) => {
   if (testQuestionsByCategory[subcategoryId]) {
     testQuestionsByCategory[subcategoryId] = [...testQuestionsByCategory[subcategoryId], ...newQuestions];
@@ -465,12 +518,10 @@ export const addQuestionsToSubcategory = (subcategoryId: string, newQuestions: T
   }
 };
 
-// Helper function to get all available subcategory IDs
 export const getAllSubcategoryIds = (): string[] => {
   return Object.keys(testQuestionsByCategory);
 };
 
-// Helper function to create a template question
 export const createQuestionTemplate = (
   id: number,
   question: string,
@@ -489,42 +540,6 @@ export const createQuestionTemplate = (
     category,
     difficulty
   };
-};
-
-// Example usage and templates for each main category
-export const questionTemplates = {
-  // Grand Test Questions Template
-  grandTest: (testNumber: number, questionNumber: number): TestQuestion => ({
-    id: 30000 + (testNumber * 100) + questionNumber,
-    question: `Grand Test ${testNumber} - Question ${questionNumber}: [Your question here]`,
-    options: ["Option A", "Option B", "Option C", "Option D"],
-    correctAnswer: 0,
-    explanation: "Your detailed explanation here",
-    category: "Grand Test",
-    difficulty: 'Hard'
-  }),
-
-  // HYT Questions Template  
-  hyt: (testNumber: number, questionNumber: number): TestQuestion => ({
-    id: 31000 + (testNumber * 100) + questionNumber,
-    question: `HYT Test ${testNumber} - Question ${questionNumber}: [Your question here]`,
-    options: ["Option A", "Option B", "Option C", "Option D"],
-    correctAnswer: 0,
-    explanation: "Your detailed explanation here",
-    category: "HYT",
-    difficulty: 'Medium'
-  }),
-
-  // MCQ Questions Template
-  mcq: (setNumber: number, questionNumber: number): TestQuestion => ({
-    id: 32000 + (setNumber * 100) + questionNumber,
-    question: `MCQ Set ${setNumber} - Question ${questionNumber}: [Your question here]`,
-    options: ["Option A", "Option B", "Option C", "Option D"],
-    correctAnswer: 0,
-    explanation: "Your detailed explanation here",
-    category: "MCQ",
-    difficulty: 'Medium'
-  })
 };
 
 // Batch update function for multiple subcategories

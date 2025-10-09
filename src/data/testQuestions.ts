@@ -789,7 +789,7 @@ if (testQuestionsByCategory['grand-test-1']) {
   testQuestionsByCategory['grand-test-1'] = grandTest1Questions;
 }
 
-// Real questions for MCQ Set 1
+// Real questions for MCQ 
 const mcqSet1Questions: TestQuestion[] = [
   {
   id: '1',
@@ -1153,7 +1153,7 @@ const mcqSet1Questions: TestQuestion[] = [
 }
 ];
 
-// Replace placeholder questions with real ones for MCQ Set 1
+// Replace placeholder questions with real ones for MCQ 
 if (testQuestionsByCategory['mcq-set-1']) {
   testQuestionsByCategory['mcq-set-1'] = mcqSet1Questions;
 }

@@ -230,6 +230,180 @@ const grandTest1Questions: TestQuestion[] = [
 if (testQuestionsByCategory['grand-test-1']) {
   testQuestionsByCategory['grand-test-1'] = grandTest1Questions;
 }
+];
+
+// MCQ Set 1   
+const mcqSet1Questions: TestQuestion[] = [
+  {
+  id: '1',
+  question: 'Which part of the brain controls balance and coordination of voluntary muscle movements?',
+  options: ['Cerebrum', 'Cerebellum', 'Medulla oblongata', 'Pons'],
+  correctAnswer: 1,
+  explanation: 'The cerebellum lies posterior to the brainstem and coordinates voluntary muscle movements, posture, and balance. Damage to the cerebellum causes loss of coordination (ataxia). Hence, option b is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '2',
+  question: 'Which of the following organs is responsible for the secretion of bile?',
+  options: ['Liver', 'Gall bladder', 'Pancreas', 'Stomach'],
+  correctAnswer: 0,
+  explanation: 'The liver secretes bile that helps in emulsification and absorption of fats. The gall bladder stores and concentrates bile but does not produce it. Hence, option a is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '3',
+  question: 'The functional unit of the kidney is called:',
+  options: ['Nephron', 'Neuron', 'Glomerulus', 'Tubule'],
+  correctAnswer: 0,
+  explanation: 'Each kidney contains about one million nephrons that filter blood, reabsorb required substances, and excrete wastes as urine. Hence, option a is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '4',
+  question: 'Which blood cells are responsible for antibody production?',
+  options: ['T-lymphocytes', 'B-lymphocytes', 'Neutrophils', 'Monocytes'],
+  correctAnswer: 1,
+  explanation: 'B-lymphocytes mature into plasma cells that produce antibodies. T-lymphocytes mediate cellular immunity, and neutrophils or monocytes act as phagocytes. Hence, option b is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '5',
+  question: 'Which of the following is the natural pacemaker of the heart?',
+  options: ['Atrioventricular node', 'Sinoatrial node', 'Bundle of His', 'Purkinje fibres'],
+  correctAnswer: 1,
+  explanation: 'The sinoatrial (SA) node, located in the right atrium, initiates the electrical impulse that determines heart rate and rhythm; hence it is called the natural pacemaker. Hence, option b is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '6',
+  question: 'Which hormone increases blood calcium levels?',
+  options: ['Calcitonin', 'Parathyroid hormone', 'Insulin', 'Thyroxine'],
+  correctAnswer: 1,
+  explanation: 'Parathyroid hormone (PTH) secreted by parathyroid glands increases blood calcium by promoting bone resorption and decreasing renal calcium excretion. Hence, option b is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '7',
+  question: 'Which vitamin is essential for normal vision?',
+  options: ['Vitamin A', 'Vitamin C', 'Vitamin D', 'Vitamin E'],
+  correctAnswer: 0,
+  explanation: 'Vitamin A (retinol) is required for the synthesis of rhodopsin in retinal cells; its deficiency causes night blindness. Hence, option a is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '8',
+  question: 'Which of the following organs produces insulin?',
+  options: ['Liver', 'Pancreas', 'Gall bladder', 'Stomach'],
+  correctAnswer: 1,
+  explanation: 'The β-cells of the islets of Langerhans in the pancreas secrete insulin, which regulates blood glucose levels. Hence, option b is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '9',
+  question: 'Which part of the eye regulates the amount of light entering it?',
+  options: ['Lens', 'Cornea', 'Iris', 'Retina'],
+  correctAnswer: 2,
+  explanation: 'The iris controls the diameter of the pupil and thus regulates the amount of light entering the eyeball. Hence, option c is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '10',
+  question: 'Which of the following is the site for gaseous exchange in the lungs?',
+  options: ['Bronchi', 'Bronchioles', 'Alveoli', 'Trachea'],
+  correctAnswer: 2,
+  explanation: 'Alveoli are microscopic air sacs where oxygen diffuses into blood and carbon dioxide diffuses out through the thin alveolar–capillary membrane. Hence, option c is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+  {
+  id: '11',
+  question: 'Which part of the brain regulates body temperature, hunger, and thirst?',
+  options: ['Cerebrum', 'Cerebellum', 'Hypothalamus', 'Medulla oblongata'],
+  correctAnswer: 2,
+  explanation: 'The hypothalamus is the main centre for autonomic and endocrine regulation. It maintains homeostasis by controlling temperature, appetite, thirst, and hormonal secretion through the pituitary gland. Hence, option c is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '12',
+  question: 'Which of the following is a fat-soluble vitamin?',
+  options: ['Vitamin B12', 'Vitamin C', 'Vitamin D', 'Vitamin B6'],
+  correctAnswer: 2,
+  explanation: 'Vitamins A, D, E, and K are fat-soluble and stored in the liver and fatty tissues. Vitamin D regulates calcium absorption. Hence, option c is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '13',
+  question: 'Deficiency of Vitamin C leads to which disease?',
+  options: ['Rickets', 'Scurvy', 'Pellagra', 'Beriberi'],
+  correctAnswer: 1,
+  explanation: 'Vitamin C deficiency causes scurvy, characterized by bleeding gums, poor wound healing, and anemia due to defective collagen synthesis. Hence, option b is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '14',
+  question: 'Which enzyme in saliva helps in the digestion of starch?',
+  options: ['Pepsin', 'Amylase', 'Lipase', 'Trypsin'],
+  correctAnswer: 1,
+  explanation: 'Salivary amylase (ptyalin) breaks down starch into maltose in the mouth. Pepsin acts on proteins in the stomach. Hence, option b is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '15',
+  question: 'Which of the following blood vessels carries oxygenated blood from lungs to the heart?',
+  options: ['Pulmonary vein', 'Pulmonary artery', 'Aorta', 'Superior vena cava'],
+  correctAnswer: 0,
+  explanation: 'The pulmonary vein carries oxygenated blood from the lungs to the left atrium, whereas the pulmonary artery carries deoxygenated blood from the heart to the lungs. Hence, option a is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '16',
+  question: 'The hormone responsible for milk production is:',
+  options: ['Oxytocin', 'Prolactin', 'Progesterone', 'Estrogen'],
+  correctAnswer: 1,
+  explanation: 'Prolactin, secreted by the anterior pituitary, stimulates milk secretion after childbirth. Oxytocin helps in milk ejection. Hence, option b is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '17',
+  question: 'Which part of the ear is responsible for maintaining body balance?',
+  options: ['Cochlea', 'Semicircular canals', 'Eustachian tube', 'Tympanic membrane'],
+  correctAnswer: 1,
+  explanation: 'The semicircular canals of the inner ear detect angular movements and help maintain equilibrium. The cochlea is involved in hearing. Hence, option b is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '18',
+  question: 'Which artery supplies oxygenated blood to the heart muscle?',
+  options: ['Coronary artery', 'Carotid artery', 'Pulmonary artery', 'Aortic arch'],
+  correctAnswer: 0,
+  explanation: 'The coronary arteries branch from the ascending aorta and supply oxygenated blood to the myocardium. Blockage leads to angina or myocardial infarction. Hence, option a is correct.',
+  category: 'MCQ Set 1 A&P_RRB',
+  difficulty: 'Moderate'
+},
+{
+  id: '19',
+  question: 'Which of the following is the largest gland in the human body?',
+  options: ['Liver', 'Pancreas', 'Thyroid', 'Salivary gland'],
+  correctAnswer: 0,
+  explanation: 'The liver is the largest gland and performs vital metabolic, detoxifying, and synthetic functions including bile secretion. Hence, option a is correct.',
+];
+testQuestionsByCategory['mcq-1'] = mcqSet1Questions;
 
 // Get all test questions as a flat array
 export const getAllTestQuestions = (): TestQuestion[] => {
